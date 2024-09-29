@@ -109,6 +109,7 @@ nav ul li a:hover {
 .projects .project-grid {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap; /* Ensures responsiveness */
 }
 
 .projects .project-item {
@@ -179,3 +180,63 @@ footer p {
     color: #0077b5; /* Change this to any color you like for the hover effect */
     transform: scale(1.1); /* Slight zoom on hover */
 }
+
+/* MEDIA QUERIES */
+
+/* Medium Devices: Tablets, iPads */
+@media (max-width: 768px) {
+    .left-header {
+        font-size: 2em;
+    }
+    
+    .projects .project-item {
+        width: 45%; /* Adjust project grid for smaller screens */
+    }
+
+    nav ul {
+        gap: 10px; /* Reduce spacing for nav items */
+    }
+}
+
+/* Small Devices: iPhones, Pixels, and smaller smartphones */
+@media (max-width: 576px) {
+    header .header-content {
+        flex-direction: column; /* Stack name and cube vertically */
+        text-align: center;
+    }
+
+    .left-header {
+        margin: 0;
+        font-size: 1.8em;
+    }
+
+    .right-header {
+        margin: 20px 0;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        gap: 15px;
+    }
+
+    .projects .project-item {
+        width: 100%; /* Full-width for projects on small screens */
+    }
+
+    .cube {
+        width: 120px;
+        height: 120px;
+    }
+
+    .face {
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+        font-size: 1em; /* Reduce font size inside the cube */
+    }
+
+    .social-icons a {
+        font-size: 1.5em; /* Adjust social icons size */
+    }
+}
+
