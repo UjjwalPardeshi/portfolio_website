@@ -62,30 +62,30 @@ nav ul li a:hover {
 
 /* 3D Cube Animation */
 .cube {
-    width: 150px;
-    height: 150px;
+    width: 130px; /* Slightly smaller than the original size */
+    height: 130px;
     transform-style: preserve-3d;
     animation: rotate 10s infinite linear;
 }
 
 .face {
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     background-color: rgba(255, 255, 255, 0.8);
     border: 2px solid #fff;
     text-align: center;
-    line-height: 150px;
+    line-height: 130px;
     font-size: 1.2em;
     color: #333;
 }
 
-.front { transform: translateZ(75px); }
-.back { transform: rotateY(180deg) translateZ(75px); }
-.left { transform: rotateY(-90deg) translateZ(75px); }
-.right { transform: rotateY(90deg) translateZ(75px); }
-.top { transform: rotateX(90deg) translateZ(75px); }
-.bottom { transform: rotateX(-90deg) translateZ(75px); }
+.front { transform: translateZ(65px); }
+.back { transform: rotateY(180deg) translateZ(65px); }
+.left { transform: rotateY(-90deg) translateZ(65px); }
+.right { transform: rotateY(90deg) translateZ(65px); }
+.top { transform: rotateX(90deg) translateZ(65px); }
+.bottom { transform: rotateX(-90deg) translateZ(65px); }
 
 @keyframes rotate {
     from {
@@ -111,7 +111,7 @@ nav ul li a:hover {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    justify-content: space-around; /* Ensure proper spacing */
+    justify-content: space-around;
 }
 
 .projects .project-item {
@@ -120,7 +120,7 @@ nav ul li a:hover {
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 30%;
-    min-width: 250px; /* Ensure the project items don't get too small */
+    min-width: 250px;
 }
 
 /* Contact */
@@ -220,14 +220,14 @@ footer p {
 
     /* Adjust the cube size for phones */
     .cube {
-        width: 100px;
-        height: 100px;
+        width: 90px; /* Smaller size for phones */
+        height: 90px;
     }
 
     .face {
-        width: 100px;
-        height: 100px;
-        line-height: 100px;
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
         font-size: 0.9em;
     }
 
