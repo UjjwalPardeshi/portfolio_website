@@ -106,18 +106,21 @@ nav ul li a:hover {
     background-color: #e7e7e7;
 }
 
+/* Projects Section */
 .projects .project-grid {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap; /* Ensures responsiveness */
+    flex-wrap: wrap;
+    justify-content: space-around; /* Ensure proper spacing */
 }
 
 .projects .project-item {
     background-color: #fff;
     padding: 20px;
     border: 1px solid #ccc;
-    width: 30%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    min-width: 250px; /* Ensure the project items don't get too small */
 }
 
 /* Contact */
@@ -177,31 +180,23 @@ footer p {
 }
 
 .social-icons a:hover {
-    color: #0077b5; /* Change this to any color you like for the hover effect */
-    transform: scale(1.1); /* Slight zoom on hover */
+    color: #0077b5;
+    transform: scale(1.1);
 }
 
 /* MEDIA QUERIES */
 
-/* Medium Devices: Tablets, iPads */
-@media (max-width: 768px) {
-    .left-header {
-        font-size: 2em;
-    }
-    
+/* Medium Devices: Tablets, Laptops */
+@media (max-width: 1024px) {
     .projects .project-item {
-        width: 45%; /* Adjust project grid for smaller screens */
-    }
-
-    nav ul {
-        gap: 10px; /* Reduce spacing for nav items */
+        width: 45%; /* Adjust the width for better layout on laptops */
     }
 }
 
-/* Small Devices: iPhones, Pixels, and smaller smartphones */
+/* Small Devices: Phones */
 @media (max-width: 576px) {
     header .header-content {
-        flex-direction: column; /* Stack name and cube vertically */
+        flex-direction: column;
         text-align: center;
     }
 
@@ -215,28 +210,29 @@ footer p {
     }
 
     nav ul {
-        flex-direction: column; /* Stack nav items vertically */
+        flex-direction: column;
         gap: 15px;
     }
 
     .projects .project-item {
-        width: 100%; /* Full-width for projects on small screens */
+        width: 100%;
     }
 
+    /* Adjust the cube size for phones */
     .cube {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
     }
 
     .face {
-        width: 120px;
-        height: 120px;
-        line-height: 120px;
-        font-size: 1em; /* Reduce font size inside the cube */
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 0.9em;
     }
 
     .social-icons a {
-        font-size: 1.5em; /* Adjust social icons size */
+        font-size: 1.5em;
     }
 }
 
