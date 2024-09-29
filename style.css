@@ -1,0 +1,181 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-header {
+    margin-left: 20px;
+    font-size: 2.5em;
+}
+
+.right-header {
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* 3D Cube Animation */
+.cube {
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    animation: rotate 10s infinite linear;
+}
+
+.face {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #fff;
+    text-align: center;
+    line-height: 150px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.front { transform: translateZ(75px); }
+.back { transform: rotateY(180deg) translateZ(75px); }
+.left { transform: rotateY(-90deg) translateZ(75px); }
+.right { transform: rotateY(90deg) translateZ(75px); }
+.top { transform: rotateX(90deg) translateZ(75px); }
+.bottom { transform: rotateX(-90deg) translateZ(75px); }
+
+@keyframes rotate {
+    from {
+        transform: rotateX(30deg) rotateY(30deg);
+    }
+    to {
+        transform: rotateX(30deg) rotateY(390deg);
+    }
+}
+
+/* Section Styles */
+.section {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.about {
+    background-color: #e7e7e7;
+}
+
+.projects .project-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.projects .project-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact */
+.contact {
+    background-color: #f1f1f1;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Social Icons */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 2em;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0077b5; /* Change this to any color you like for the hover effect */
+    transform: scale(1.1); /* Slight zoom on hover */
+}
