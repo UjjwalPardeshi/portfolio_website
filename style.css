@@ -107,20 +107,38 @@ nav ul li a:hover {
 }
 
 /* Projects Section */
-.projects .project-grid {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.project-grid {
+    margin-top: 20px;
 }
 
-.projects .project-item {
-    background-color: #fff;
-    padding: 20px;
+.project-item {
+    margin-bottom: 20px;
+    padding: 15px;
     border: 1px solid #ccc;
+    background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    min-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item h3 a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.project-item h3 a:hover {
+    color: #0077b5; /* Adjust the hover color as needed */
+}
+
+.project-item p {
+    margin-top: 10px;
+    color: #666;
+}
+
+/* Project item hover effect */
+.project-item:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Contact */
