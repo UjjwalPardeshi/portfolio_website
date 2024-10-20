@@ -235,4 +235,38 @@ footer p {
         font-size: 1.5em;
     }
 }
+/* Blog Section */
+.blog-list {
+    margin-top: 20px;
+}
+
+.blog-post {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-post h3 a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.blog-post h3 a:hover {
+    color: #0077b5; /* Change to your desired hover color */
+}
+
+.blog-post p {
+    margin-top: 10px;
+    color: #666;
+}
+
+/* Blog post hover effect */
+.blog-post:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
 
