@@ -1,111 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Ujjwal Surajkumar Pardeshi - Portfolio</title>
-        <!-- Font Awesome for Social Icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ujjwal Surajkumar Pardeshi - Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfolio of Ujjwal Surajkumar Pardeshi - AI Engineer, Developer, and Researcher." />
+</head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <h1 class="left-header">Ujjwal Surajkumar Pardeshi</h1>
-                <div class="cube right-header">
-                    <div class="face front">Ujjwal</div>
-                    <div class="face back">Researcher</div>
-                    <div class="face left">Developer</div>
-                    <div class="face right">IoT</div>
-                    <div class="face top">AI</div>
-                    <div class="face bottom">Engineer</div>
-                </div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            
+  <header>
+    <div class="container header-container">
+      <div class="header-content">
+        <h1 class="left-header">Ujjwal Surajkumar Pardeshi</h1>
+        <p class="subtitle">AI Engineer • Developer • Researcher</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about" class="section about">
+    <div class="container about-container">
+      <img src="images/profile.jpg" alt="Ujjwal Surajkumar Pardeshi" class="profile-photo" />
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I’m <strong>Ujjwal Surajkumar Pardeshi</strong>, a machine learning engineer and researcher passionate about AI, deep learning, and computer vision. Currently, I am pursuing my B.Tech in Computer Science (IoT) at SRM Institute of Science & Technology (<b>2022–2026</b>).
+        </p>
+        <p>
+          My work spans vision systems for <b>reflection removal</b> and <b>depth estimation</b>, smart campus solutions, and deepfake detection. I’ve interned at Samsung Research, led research at IEEE SRM, and received honors including the AIOT Expo Award. My goal is to deploy impactful AI-powered solutions and welcome new collaborations.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-item">
+          <img src="images/project1.png" alt="AutoSense Project Screenshot" class="project-thumb" />
+          <h3><a href="https://github.com/UjjwalPardeshi/AutoSense" target="_blank" rel="noopener">AutoSense</a></h3>
+          <p>Advanced vehicle and pedestrian detection system using DeepLabV3 and ResNet-50 with a 96% accuracy rate.</p>
         </div>
-    </header>
-
-    <section id="about" class="section about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                I’m Ujjwal Surajkumar Pardeshi, a passionate machine learning (ML) enthusiast with a keen interest in exploring the potential of AI, deep learning, and computer vision. Currently pursuing my B.Tech in Computer Science and Engineering with a specialization in IoT at SRM Institute of Science and Technology, I’m dedicated to understanding how intelligent algorithms can analyze data, make predictions, and solve real-world problems.
-
-I’ve worked on projects like MyVoice, which provides a voice for the mute using TensorFlow and OpenCV, and MetaShard, a decentralized finance (DeFi) solution combining blockchain technologies. As a Research Fellow at IEEE SRMIST, I have implemented GradCAM for analyzing MSTAR datasets and integrated pose estimation models using OpenPose and TensorFlow.
-
-My mission is to continue building solutions that combine the power of AI and ML to optimize and innovate across various fields. I am actively seeking new challenges and opportunities in this exciting landscape.
-            </p>
+        <div class="project-item">
+          <img src="images/project2.png" alt="Aircraft/Drone Detection Project Screenshot" class="project-thumb" />
+          <h3><a href="https://github.com/UjjwalPardeshi/Aircraft_detection-with-Deeplearning" target="_blank" rel="noopener">Aircraft/Drone Detection with Deep Learning</a></h3>
+          <p>Robust aerial object detection framework suitable for surveillance, aviation safety, and wildlife monitoring.</p>
         </div>
-    </section>
-
-    <section id="projects" class="section projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="project-item">
-                    <h3><a href="https://github.com/UjjwalPardeshi/AutoSense" target="_blank">AutoSense</a></h3>
-                    <p>Advanced vehicle and pedestrian detection system using DeepLabV3 and ResNet-50 with a 96% accuracy rate. Explore the code and models in the <a target="_blank">GitHub repository</a>.</p>
-                </div>
-                <div class="project-item">
-                    <h3><a href="https://github.com/UjjwalPardeshi/Aircraft_detection-with-Deeplearning" target="_blank">Aircraft/Drone Detection with Deep Learning</a></h3>
-                    <p>The project provides a robust framework for detecting aerial objects, potentially applicable in areas like surveillance, aviation safety, or wildlife monitoring. Explore the code, datasets, and model weights in the <a target="_blank">GitHub repository</a>.</p>
-                </div>
-                <div class="project-item">
-                    <h3><a href="https://github.com/UjjwalPardeshi/Exoplanet_detection" target="_blank">Exoplanet Detection</a></h3>
-                    <p>Analyzed NASA's Kepler and TESS data using Lightkurve to detect Earth-sized exoplanets and study their orbital characteristics. Check out the project on <a target="_blank">GitHub</a>.</p>
-                </div>
-                <div class="project-item">
-                    <h3><a href="https://github.com/UjjwalPardeshi/Gesture_Recognition" target="_blank">Gesture based authentication system</a></h3>
-                    <p>A gesture-based authentication system is a security mechanism that allows users to unlock devices or access services by performing specific gestures, such as drawing shapes or making hand movements. These gestures are typically detected using sensors like touchscreens, cameras, or motion sensors, and are compared to a stored pattern for verification. This method enhances security by relying on dynamic inputs, making it harder for unauthorized users to replicate the exact gesture, while also providing a more intuitive and user-friendly alternative to traditional passwords or PINs.</p>
-                </div>
-                <div class="project-item">
-                    <h3><a href="https://github.com/UjjwalPardeshi/Smart_lift" target="_blank">Smart Lift Occupancy Detection and Visualization System for College Campuses</a></h3>
-                    <p>This system helps optimize elevator usage, reduce waiting times, and improve campus infrastructure efficiency by making lift usage more manageable and transparent. You can view the code <a target="_blank">here on GitHub</a>.</p>
-                </div>
-            </div>
+        <div class="project-item">
+          <img src="images/project3.png" alt="Exoplanet Detection Project Screenshot" class="project-thumb" />
+          <h3><a href="https://github.com/UjjwalPardeshi/Exoplanet_detection" target="_blank" rel="noopener">Exoplanet Detection</a></h3>
+          <p>Used NASA’s Kepler and TESS data to detect Earth-sized exoplanets using Lightkurve.</p>
         </div>
-    </section>
-
-    <section id="contact" class="section contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>If you'd like to get in touch, feel free to contact me:</p>
-            <ul class="social-icons">
-                <!-- GitHub Icon -->
-                <li><a href="https://github.com/UjjwalPardeshi" target="_blank"><i class="fab fa-github"></i></a></li>
-                <!-- LinkedIn Icon -->
-                <li><a href="https://www.linkedin.com/in/ujjwalpardeshi" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                <!-- Medium Icon -->
-                <li><a href="https://medium.com/@ujjwalpardeshi" target="_blank"><i class="fab fa-medium"></i></a></li>
-                <!-- Email Icon -->
-                <li><a href="mailto:up6276@srmist.edu.in"><i class="fas fa-envelope"></i></a></li>
-                <!-- Phone Icon -->
-                <li><a href="tel:+918976131401"><i class="fas fa-phone"></i></a></li>
-                <!-- Resume Icon -->
-                <li><a href="https://drive.google.com/file/d/1A_UirYRZ3BhF3m6aNbVuTins-i4Ri41E/view?usp=sharing" target="_blank">
-                    <i class="fas fa-file-alt"></i>
-                </a></li>
-            </ul>
+        <div class="project-item">
+          <img src="images/project4.png" alt="Gesture based authentication system Screenshot" class="project-thumb" />
+          <h3><a href="https://github.com/UjjwalPardeshi/Gesture_Recognition" target="_blank" rel="noopener">Gesture Based Authentication System</a></h3>
+          <p>Security system enabling access via specific user gestures using sensors and machine learning algorithms.</p>
         </div>
-    </section>
-    
-
-    <footer>
-        <div class="container">
+        <div class="project-item">
+          <img src="images/project5.png" alt="Smart Lift Occupancy Detection Screenshot" class="project-thumb" />
+          <h3><a href="https://github.com/UjjwalPardeshi/Smart_lift" target="_blank" rel="noopener">Smart Lift Occupancy Detection System</a></h3>
+          <p>Optimizes elevator usage on campuses reducing wait times and improving infrastructure management.</p>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you want to connect, feel free to reach out through any of the following:</p>
+      <ul class="social-icons">
+        <li><a href="https://github.com/UjjwalPardeshi" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/ujjwalpardeshi" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://medium.com/@ujjwalpardeshi" target="_blank" aria-label="Medium"><i class="fab fa-medium"></i></a></li>
+        <li><a href="mailto:up6276@srmist.edu.in" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="tel:+918976131401" aria-label="Phone"><i class="fas fa-phone"></i></a></li>
+        <li><a href="https://drive.google.com/file/d/1A_UirYRZ3BhF3m6aNbVuTins-i4Ri41E/view?usp=sharing" target="_blank" aria-label="Resume"><i class="fas fa-file-alt"></i></a></li>
+      </ul>
+      <form class="contact-form" action="mailto:up6276@srmist.edu.in" method="post" enctype="text/plain" spellcheck="false">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required placeholder="Your Name" />
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required placeholder="you@example.com" />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-container">
+      <p>© 2025 Ujjwal Surajkumar Pardeshi. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
