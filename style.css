@@ -171,92 +171,10 @@ nav ul li a:focus {
     border-radius: 8px;
     user-select: none;
 }
-
-/* Contact Section */
-.contact {
-    background-color: #f1f1f1;
+#chat-window div {
+    margin-bottom: 10px;
 }
 
-.contact h2 {
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 25px;
-    text-align: center;
-    color: #2d3a4a;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    gap: 30px;
-    margin-bottom: 40px;
-}
-
-.social-icons li a {
-    color: #2d3a4a;
-    font-size: 2.2rem;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.social-icons li a:hover,
-.social-icons li a:focus {
-    color: #4fc3f7;
-    transform: scale(1.2);
-    outline: none;
-}
-
-/* Contact form */
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 25px 30px;
-    border-radius: 10px;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 6px;
-    font-weight: 600;
-    color: #333;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 12px 15px;
-    margin-bottom: 20px;
-    border: 1.8px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
-    resize: vertical;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    border-color: #4fc3f7;
-    outline: none;
-}
-
-.contact-form button {
-    background-color: #4fc3f7;
-    color: white;
-    border: none;
-    padding: 14px 24px;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    font-weight: 700;
-    transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover,
-.contact-form button:focus {
-    background-color: #3ab0f9;
-    outline: none;
-}
 
 /* Footer */
 footer {
