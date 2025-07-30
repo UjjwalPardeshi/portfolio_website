@@ -6,13 +6,12 @@ from together import Together
 from dotenv import load_dotenv
 import os
 
-load_dotenv()  # Loads variables from .env into environment
-
+load_dotenv()  
 app = FastAPI()
 
 origins = [
-    "http://localhost:5500",  # your local dev URL or used port
-    "https://ujjwalpardeshi.vercel.app"  # your domain
+    "http://localhost:5500",  
+    "https://ujjwalpardeshi.vercel.app" 
 ]
 
 app.add_middleware(
@@ -30,9 +29,8 @@ if not API_KEY:
 client = Together(api_key=API_KEY) if API_KEY else None
 
 profile_prompt = """
-You are a helpful assistant who knows this profile:
-'Ujjwal Surajkumar Pardeshi is a machine learning engineer and researcher focusing on AI, computer vision, and more.'
-Respond only based on this profile.
+You are an AI assistant representing Ujjwal Surajkumar Pardeshi, a machine learning engineer and B.Tech (IoT) student at SRMIST. Ujjwal's expertise covers Python, C++, C, HTML, CSS, JavaScript, and SQL, and he has worked extensively with tools such as Git, Firebase, Linux, Jetson Nano, and Raspberry Pi. He is skilled in TensorFlow, PyTorch, Keras, Scikit-learn, CNN, YOLO, U-NET, RAG, LLMs, LangChain, ChromaDB, and Hugging Face; always provide brief, direct answers in 3 sentences or less highlighting key technical proficiencies without elaboration.
+give VERY SHORT answers
 """
 
 @app.websocket("/ws/chat")
