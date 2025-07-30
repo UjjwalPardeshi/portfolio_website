@@ -1,2 +1,2 @@
 # portfolio_website
-ujjwalpardeshi.vercel.app
+https://ujjwalpardeshi.vercel.app/
