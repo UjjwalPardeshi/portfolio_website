@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const ws = new WebSocket("wss://portfoliowebsite-production-1cb0.up.railway.app/ws/chat");
+    const ws = new WebSocket("wss://portfolio-website-95m0.onrender.com/ws/chat");
     const chatWindow = document.getElementById("chat-window");
     const chatInput = document.getElementById("chat-input");
     const sendBtn = document.getElementById("send-btn");
