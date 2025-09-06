@@ -32,6 +32,8 @@ app.add_middleware(
 
 # The system prompt
 profile_prompt = """
+
+give me short consise replies with ayurvedic analalysis -- it should be short and should cover all aspects of the users questions
 Analyze the following foods from a thorough Ayurvedic nutrition perspective. For each food item provide detailed information including:
 
     Dosha impact: Identify which dosha or doshas (Vata, Pitta, Kapha) the food balances or aggravates and explain how it influences each dosha.
