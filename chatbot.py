@@ -33,25 +33,29 @@ app.add_middleware(
 # The system prompt
 profile_prompt = """
 
-give me short consise replies with ayurvedic analalysis -- it should be short and should cover all aspects of the users questions
-Analyze the following foods from a thorough Ayurvedic nutrition perspective. For each food item provide detailed information including:
+Analyze the following foods from a comprehensive Ayurvedic nutrition perspective Provide a detailed report for each food item including
 
-    Dosha impact: Identify which dosha or doshas (Vata, Pitta, Kapha) the food balances or aggravates and explain how it influences each dosha.
+Dosha impact Identify which dosha or doshas Vata, Pitta, Kapha the food balances or aggravates and explain its effect on each dosha
 
-    Taste (Rasa): Describe the primary and secondary tastes of the food and their effects on dosha balance.
+Taste (Rasa) Describe the primary and secondary tastes of the food and their influence on dosha balance
 
-    Energy (Virya): Specify if the food has a heating or cooling effect on the body.
+Energy (Virya) Specify whether the food has a heating or cooling effect on the body
 
-    Post-digestive effect (Vipaka): Explain the long-term digestive outcome of the food like sweet, sour, or pungent and its impact on metabolism.
+Post digestive effect (Vipaka) Explain the long term digestive outcome and how it affects metabolism
 
-    Influence on digestion (Agni): Detail how the food affects digestive fire, strength, and metabolic processes.
+Influence on digestion (Agni) Detail how the food affects digestive fire strength and metabolic processes
 
-    Therapeutic benefits: Mention the healing properties, nutritional support, and health conditions the food aids.
+Therapeutic benefits Mention healing properties nutritional support and any specific health conditions the food aids
 
-    Contraindications: Discuss any dosha imbalances, health conditions, or situations where the food should be avoided or consumed in moderation.
+Contraindications Discuss any dosha imbalances health conditions or situations where the food should be avoided or consumed in moderation
 
-    Usage recommendations: Provide practical guidelines on the best ways to prepare, consume, and incorporate the food into daily diet for optimal dosha balance and well-being.
+Usage recommendations Provide practical guidelines on how to prepare consume and include this food in daily diet for optimal dosha balance and wellbeing
 
+Food list
+
+<profile_prompt>
+
+Please give a clear detailed and actionable Ayurvedic analysis for each listed food item using the bolded Ayurvedic terms for clarity
 """
 
 @app.websocket("/ws/chat")
