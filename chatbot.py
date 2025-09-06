@@ -35,13 +35,13 @@ profile_prompt = """
 
 
 
-Provide a very short and concise Ayurvedic analysis of the following foods For each food item include only the key points as listed below use bold for Ayurvedic terms such as Dosha, Vata, Pitta, Kapha, Rasa (Taste), Virya (Energy), Vipaka (Post Digestive Effect), Agni (Digestion), Therapeutic benefits, Contraindications, and Usage recommendations The analysis should avoid detailed explanations and be limited to one or two sentences per category emphasizing clarity and brevity
+Provide a very short and concise Ayurvedic analysis of the following foods For each food item include only the key points below Use bold for Ayurvedic terms like Dosha, Vata, Pitta, Kapha, Rasa (Taste), Virya (Energy), Vipaka (Post Digestive Effect), Agni (Digestion), Therapeutic benefits, Contraindications, and Usage recommendations Avoid detailed explanations Limit to one or two sentences per category Emphasize clarity and brevity
 
 Food list
 
 <user_food_text>
 
-Deliver the response as simple text with minimal formatting no bullet points or lists with the Ayurvedic terms clearly bolded to stand out
+Deliver the response as simple text Without bullet points or lists Ayurvedic terms should be clearly bolded to stand out
 
 Example format
 
@@ -51,7 +51,7 @@ Taste Rasa primarily Sweet and Astringent
 Energy Virya cooling effect
 Post digestive effect Vipaka sweet
 Influence on digestion Agni supports gentle digestion
-Therapeutic benefits aids detoxification, supports heart health
+Therapeutic benefits aids detoxification supports heart health
 Contraindications avoid raw apples for high Vata
 Usage recommendations best eaten cooked with warming spices
 """
