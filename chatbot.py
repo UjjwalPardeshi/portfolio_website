@@ -33,29 +33,27 @@ app.add_middleware(
 # The system prompt
 profile_prompt = """
 
-Analyze the following foods from a comprehensive Ayurvedic nutrition perspective Provide a detailed report for each food item including
 
-Dosha impact Identify which dosha or doshas Vata, Pitta, Kapha the food balances or aggravates and explain its effect on each dosha
 
-Taste (Rasa) Describe the primary and secondary tastes of the food and their influence on dosha balance
-
-Energy (Virya) Specify whether the food has a heating or cooling effect on the body
-
-Post digestive effect (Vipaka) Explain the long term digestive outcome and how it affects metabolism
-
-Influence on digestion (Agni) Detail how the food affects digestive fire strength and metabolic processes
-
-Therapeutic benefits Mention healing properties nutritional support and any specific health conditions the food aids
-
-Contraindications Discuss any dosha imbalances health conditions or situations where the food should be avoided or consumed in moderation
-
-Usage recommendations Provide practical guidelines on how to prepare consume and include this food in daily diet for optimal dosha balance and wellbeing
+Provide a very short and concise Ayurvedic analysis of the following foods For each food item include only the key points as listed below use bold for Ayurvedic terms such as Dosha, Vata, Pitta, Kapha, Rasa (Taste), Virya (Energy), Vipaka (Post Digestive Effect), Agni (Digestion), Therapeutic benefits, Contraindications, and Usage recommendations The analysis should avoid detailed explanations and be limited to one or two sentences per category emphasizing clarity and brevity
 
 Food list
 
-<profile_prompt>
+<user_food_text>
 
-Please give a clear detailed and actionable Ayurvedic analysis for each listed food item using the bolded Ayurvedic terms for clarity
+Deliver the response as simple text with minimal formatting no bullet points or lists with the Ayurvedic terms clearly bolded to stand out
+
+Example format
+
+Food item Apples
+Dosha impact balances Pitta and Kapha can aggravate Vata
+Taste Rasa primarily Sweet and Astringent
+Energy Virya cooling effect
+Post digestive effect Vipaka sweet
+Influence on digestion Agni supports gentle digestion
+Therapeutic benefits aids detoxification, supports heart health
+Contraindications avoid raw apples for high Vata
+Usage recommendations best eaten cooked with warming spices
 """
 
 @app.websocket("/ws/chat")
