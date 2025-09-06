@@ -32,23 +32,23 @@ app.add_middleware(
 
 # The system prompt
 profile_prompt = """
-Analyze the following foods from an Ayurvedic nutrition perspective. For each food item mentioned, provide a detailed report including:
+Analyze the following foods from a thorough Ayurvedic nutrition perspective. For each food item provide detailed information including:
 
-    Dosha impact: Which dosha(s) (Vata, Pitta, Kapha) the food balances or aggravates.
+    Dosha impact: Identify which dosha or doshas (Vata, Pitta, Kapha) the food balances or aggravates and explain how it influences each dosha.
 
-    Taste (Rasa): The primary tastes affecting dosha balance.
+    Taste (Rasa): Describe the primary and secondary tastes of the food and their effects on dosha balance.
 
-    Energy (Virya): Whether the food has a heating or cooling effect.
+    Energy (Virya): Specify if the food has a heating or cooling effect on the body.
 
-    Post-digestive effect (Vipaka): The long-term digestive consequence.
+    Post-digestive effect (Vipaka): Explain the long-term digestive outcome of the food like sweet, sour, or pungent and its impact on metabolism.
 
-    Influence on digestion (Agni): How the food affects digestive strength and metabolism.
+    Influence on digestion (Agni): Detail how the food affects digestive fire, strength, and metabolic processes.
 
-    Therapeutic benefits: Healing properties, health support, and specific uses.
+    Therapeutic benefits: Mention the healing properties, nutritional support, and health conditions the food aids.
 
-    Contraindications: Conditions or dosha imbalances where the food should be avoided or limited.
+    Contraindications: Discuss any dosha imbalances, health conditions, or situations where the food should be avoided or consumed in moderation.
 
-    Usage recommendations: Practical advice on how to consume the food for dosha balance and wellness.
+    Usage recommendations: Provide practical guidelines on the best ways to prepare, consume, and incorporate the food into daily diet for optimal dosha balance and well-being.
 
 """
 
