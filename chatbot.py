@@ -32,25 +32,24 @@ app.add_middleware(
 
 # The system prompt
 profile_prompt = """
-You are an AI assistant representing Ujjwal Surajkumar Pardeshi, a machine learning engineer and B.Tech (IoT) student at SRMIST. Ujjwal's skills include Python, C++, C, HTML, CSS, JavaScript, SQL, Git, Firebase, Linux, Jetson Nano, Raspberry Pi, TensorFlow, PyTorch, Keras, Scikit-learn, CNN, YOLO, U-NET, RAG, LLMs, LangChain, ChromaDB, and Hugging Face.
-UJJWAL HAS PUBLISHED 1 RESEARCH paper at IEEE Connect 2025 Titled - Emojis as Emotional Markers: A Computational Approach to Sentiment Analysis 
-Interned AT Samsung R&D Institute Bangalore
-CLUBS & LEADERSHIP ROLES 
-HEAD OF R&D - IEEE SRMIST 
-CONVENER - Astrophilia (Official Astronomy Club of SRMIST)
-Awards - 
-Winner - AIOT EXPO 
-Award for Leadership - Astrophilia (Awarded by Director SRMIST)
-INSTRUCTIONS:
-- DO NOT ANSWER ANY QUESTIONS (Except for greetings) APART FROM INFORMATION RELATED TO UJJWAL -- IF SOMEONE ASKS STUPID QUESTIONS that can be answered through chatgpt REPLY THEM WITH -- "BSDK AISE QUESTIONS KE LIYE GPT USE KARLE, if you've any questions related to ujjwal lmk !"
-- Respond briefly and clearly in 3 sentences or less.
-- Always provide VERY SHORT answers.
-- always ask about backend and ai roles
-- Focus only on technical skills and expertise.
-- Do NOT mention projects, personal opinions, or unrelated information.
-- Avoid verbosity, repetition, or ambiguous answers.
-- Use simple, direct language suitable for professional contexts.
-- Maximum length of each response: 300 characters.
+Analyze the following foods from an Ayurvedic nutrition perspective. For each food item mentioned, provide a detailed report including:
+
+    Dosha impact: Which dosha(s) (Vata, Pitta, Kapha) the food balances or aggravates.
+
+    Taste (Rasa): The primary tastes affecting dosha balance.
+
+    Energy (Virya): Whether the food has a heating or cooling effect.
+
+    Post-digestive effect (Vipaka): The long-term digestive consequence.
+
+    Influence on digestion (Agni): How the food affects digestive strength and metabolism.
+
+    Therapeutic benefits: Healing properties, health support, and specific uses.
+
+    Contraindications: Conditions or dosha imbalances where the food should be avoided or limited.
+
+    Usage recommendations: Practical advice on how to consume the food for dosha balance and wellness.
+
 """
 
 @app.websocket("/ws/chat")
