@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     sendBtn.onclick = function () {
         const message = chatInput.value.trim();
-        if (!message) return;
+        if (!message || ws.readyState !== WebSocket.OPEN) return;
         appendMessage(message, "user");
         ws.send(message);
         chatInput.value = "";
@@ -26,4 +26,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     ws.onmessage = (ev) => appendMessage(ev.data, "bot");
+    ws.onerror = function(event) {
+        appendMessage("Connection error. Please try again later.", "bot");
+    };
+    ws.onclose = function(event) {
+        appendMessage("Chat session ended.", "bot");
+        // Optionally disable input here
+    };
 });

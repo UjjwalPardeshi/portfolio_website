@@ -75,3 +75,4 @@ async def websocket_endpoint(websocket: WebSocket):
         logging.info("Client disconnected")
     except Exception as e:
         logging.error(f"Unexpected exception: {e}")
+    
