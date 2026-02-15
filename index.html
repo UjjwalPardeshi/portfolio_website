@@ -2,26 +2,26 @@
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ujjwal Surajkumar Pardeshi - Portfolio</title>
+  <title>Ujjwal Surajkumar Pardeshi - AI Engineer & Researcher</title>
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
     rel="stylesheet" />
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
   <meta name="description"
-    content="Portfolio of Ujjwal Surajkumar Pardeshi - AI Engineer, Developer, and Researcher." />
+    content="Portfolio of Ujjwal Surajkumar Pardeshi - AI Engineer, ML Researcher, and Backend Developer. Samsung R&D Intern, IEEE R&D Head, Published Researcher." />
 </head>
 
 <body>
+  <!-- ═══════════════════════ HEADER ═══════════════════════ -->
   <header>
     <div class="container header-container">
       <div class="header-content">
         <h1 class="left-header">Ujjwal Surajkumar Pardeshi</h1>
-        <p class="subtitle">AI Engineer • Developer • Researcher</p>
+        <p class="subtitle">AI Engineer • ML Researcher • Backend Developer</p>
       </div>
       <button class="mobile-menu-btn" aria-label="Toggle menu">
         <i class="fas fa-bars"></i>
@@ -35,6 +35,7 @@
             </a>
           </li>
           <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="blog.html" class="nav-link">Blog</a></li>
@@ -56,56 +57,168 @@
     </div>
   </header>
 
+  <!-- ═══════════════════════ ABOUT ═══════════════════════ -->
   <section id="about" class="section about fade-in">
     <div class="container about-container">
       <img src="images/profile.jpg" alt="Ujjwal Surajkumar Pardeshi" class="profile-photo" />
       <div class="about-text">
         <h2>About Me</h2>
         <p>
-          I'm <strong>Ujjwal Surajkumar Pardeshi</strong>, a machine learning engineer and researcher passionate about
-          AI, deep learning, and computer vision. Currently, I am pursuing my B.Tech in Computer Science (IoT) at SRM
-          Institute of Science & Technology (<b>2022–2026</b>).
+          I'm <strong>Ujjwal Surajkumar Pardeshi</strong>, a Computer Science undergraduate with hands-on experience
+          in AI/ML, deep learning, and Backend development. Skilled in developing production-ready ML systems,
+          RAG-based applications, and computer vision solutions.
         </p>
         <p>
-          I've hands-on experience in AI/ML, deep learning, and Backend development. Proven track record in research
-          through publications and internship at Samsung Research Institute. Skilled in developing production-ready ML
-          systems, RAG-based applications, and computer vision solutions.
+          Currently pursuing <strong>B.Tech in Computer Science (IoT)</strong> at SRM Institute of Science &
+          Technology (2022–2026) with a CGPA of <strong>7.5</strong>. I've interned at <strong>Samsung Research
+            Institute</strong>, published research at <strong>IEEE CONNECT 2025</strong>, and lead R&D at
+          <strong>IEEE SRM</strong>.
         </p>
+        <div class="about-stats">
+          <div class="stat-item">
+            <span class="stat-number">7.5</span>
+            <span class="stat-label">CGPA</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">2</span>
+            <span class="stat-label">Publications</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">11+</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">8+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- ═══════════════════════ EDUCATION ═══════════════════════ -->
+  <section id="education" class="section education fade-in">
+    <div class="container">
+      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+      <div class="education-card">
+        <div class="edu-icon">
+          <i class="fas fa-university"></i>
+        </div>
+        <div class="edu-details">
+          <h3>SRM Institute of Science and Technology</h3>
+          <p class="edu-degree">B.Tech in Computer Science with Specialization in IoT</p>
+          <div class="edu-meta">
+            <span><i class="far fa-calendar-alt"></i> Sept 2022 – May 2026</span>
+            <span><i class="fas fa-map-marker-alt"></i> Chennai, India</span>
+            <span class="edu-cgpa"><i class="fas fa-award"></i> CGPA: 7.5</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ EXPERIENCE ═══════════════════════ -->
+  <section id="experience" class="section experience fade-in">
+    <div class="container">
+      <h2><i class="fas fa-briefcase"></i> Experience</h2>
+      <div class="timeline">
+        <!-- Samsung -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Research Intern</h3>
+              <span class="timeline-date"><i class="far fa-calendar-alt"></i> Jan 2025 – June 2025</span>
+            </div>
+            <p class="timeline-company"><i class="fas fa-building"></i> Samsung Research Institute – Bangalore, IN</p>
+            <ul class="timeline-details">
+              <li>Conducted research on emoji-based sentiment analysis and engineered a custom dataset of 2,700+
+                emoji-sentiment pairs.</li>
+              <li>Leveraged BERT and Emoji2Vec embeddings for enhanced semantic representation and model performance.
+              </li>
+              <li>Explored and benchmarked multiple models: Neural Networks, Random Forest, LightGBM, and ensemble
+                techniques, achieving <strong>86.18% accuracy</strong> on the custom dataset.</li>
+              <li>Submitted findings to <strong>IEEE CONNECT 2025</strong>.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">BERT</span>
+              <span class="tag">NLP</span>
+              <span class="tag">Sentiment Analysis</span>
+              <span class="tag">LightGBM</span>
+            </div>
+          </div>
+        </div>
+        <!-- SRM Researcher -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Undergraduate Researcher</h3>
+              <span class="timeline-date"><i class="far fa-calendar-alt"></i> Aug 2024 – Jan 2025</span>
+            </div>
+            <p class="timeline-company"><i class="fas fa-building"></i> SRM – Advisor: Dr. Vaishnavi Moorthy, Chennai,
+              IN</p>
+            <ul class="timeline-details">
+              <li>Developed the Smart Lift Occupancy Detection and Visualization System using <strong>OpenVINO</strong>
+                models and Next.js frontend for real-time crowd visualization and informed elevator usage decisions.
+              </li>
+              <li>Integrated Firebase Realtime Database for instant data syncing and monitoring.</li>
+              <li>Deployed Raspberry Pi as an edge server over campus WiFi for seamless operation.</li>
+              <li>Secured 80k rupees project funding; won <strong>"Best Innovative Solution"</strong> at AIOT Project
+                Expo 2024.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">OpenVINO</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Raspberry Pi</span>
+              <span class="tag">IoT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ SKILLS ═══════════════════════ -->
   <section id="skills" class="section skills fade-in">
     <div class="container">
-      <h2>Skills & Technologies</h2>
+      <h2><i class="fas fa-cogs"></i> Skills & Technologies</h2>
       <div class="skills-grid">
         <div class="skill-category">
           <h3><i class="fas fa-code"></i> Languages</h3>
           <div class="skill-tags">
             <span class="skill-tag">Python</span>
             <span class="skill-tag">C++</span>
+            <span class="skill-tag">C</span>
             <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Node.js</span>
             <span class="skill-tag">SQL</span>
           </div>
         </div>
         <div class="skill-category">
-          <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
+          <h3><i class="fas fa-layer-group"></i> Frameworks & Tools</h3>
           <div class="skill-tags">
             <span class="skill-tag">FastAPI</span>
             <span class="skill-tag">Flask</span>
             <span class="skill-tag">React</span>
-            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">LangChain</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">JWT</span>
           </div>
         </div>
         <div class="skill-category">
-          <h3><i class="fas fa-brain"></i> AI/ML</h3>
+          <h3><i class="fas fa-brain"></i> AI / ML / DL</h3>
           <div class="skill-tags">
             <span class="skill-tag">PyTorch</span>
             <span class="skill-tag">TensorFlow</span>
             <span class="skill-tag">Keras</span>
             <span class="skill-tag">OpenCV</span>
             <span class="skill-tag">Hugging Face</span>
-            <span class="skill-tag">LangChain</span>
+            <span class="skill-tag">YOLOv8</span>
+            <span class="skill-tag">MiDaS</span>
+            <span class="skill-tag">OpenVINO</span>
           </div>
         </div>
         <div class="skill-category">
@@ -115,23 +228,76 @@
             <span class="skill-tag">GCP</span>
             <span class="skill-tag">Docker</span>
             <span class="skill-tag">Git</span>
+            <span class="skill-tag">CI/CD</span>
             <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Nvidia A100</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-database"></i> Databases & Backend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">Supabase</span>
+            <span class="skill-tag">ChromaDB</span>
+            <span class="skill-tag">Raspberry Pi</span>
+            <span class="skill-tag">WebSockets</span>
+            <span class="skill-tag">SendGrid</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ═══════════════════════ PROJECTS ═══════════════════════ -->
   <section id="projects" class="section projects fade-in">
     <div class="container">
-      <h2>Projects</h2>
+      <h2><i class="fas fa-rocket"></i> Projects</h2>
       <div class="project-grid">
+        <!-- RAG Chatbot -->
+        <div class="project-item">
+          <div class="project-icon-header">
+            <i class="fas fa-comments"></i>
+          </div>
+          <div class="project-content">
+            <h3><a href="https://github.com/UjjwalPardeshi" target="_blank" rel="noopener">RAG-Based AI Chatbot</a>
+            </h3>
+            <p>Context-aware AI chatbot with ChromaDB, real-time WebSocket messaging, automated lead capture and
+              email via SendGrid, and persistent user data storage using Firebase Firestore.</p>
+            <div class="project-tags">
+              <span class="tag">FastAPI</span>
+              <span class="tag">LangChain</span>
+              <span class="tag">ChromaDB</span>
+              <span class="tag">WebSockets</span>
+              <span class="tag">SendGrid</span>
+            </div>
+          </div>
+        </div>
+        <!-- Underwater Vision -->
+        <div class="project-item">
+          <div class="project-icon-header">
+            <i class="fas fa-water"></i>
+          </div>
+          <div class="project-content">
+            <h3><a href="https://github.com/UjjwalPardeshi" target="_blank" rel="noopener">Underwater Reflection
+                Removal & Depth Estimation</a></h3>
+            <p>Hybrid deep learning and sensor-fusion pipeline using YOLOv8, MiDaS, and OpenCV for underwater
+              reflection removal, object detection, and depth-based localization. Presented at AI FOR OCEANS.</p>
+            <div class="project-tags">
+              <span class="tag">YOLOv8</span>
+              <span class="tag">MiDaS</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">PyTorch</span>
+            </div>
+          </div>
+        </div>
+        <!-- AutoSense -->
         <div class="project-item">
           <img src="images/project1.png" alt="AutoSense Project Screenshot" class="project-thumb" />
           <div class="project-content">
-            <h3><a href="https://github.com/UjjwalPardeshi/AutoSense" target="_blank" rel="noopener">AutoSense</a></h3>
-            <p>Advanced vehicle and pedestrian detection system using DeepLabV3 and ResNet-50 with a 96% accuracy rate.
-            </p>
+            <h3><a href="https://github.com/UjjwalPardeshi/AutoSense" target="_blank" rel="noopener">AutoSense</a>
+            </h3>
+            <p>Advanced vehicle and pedestrian detection system using DeepLabV3 and ResNet-50 with a 96% accuracy
+              rate.</p>
             <div class="project-tags">
               <span class="tag">Python</span>
               <span class="tag">PyTorch</span>
@@ -139,6 +305,24 @@
             </div>
           </div>
         </div>
+        <!-- Fitmon -->
+        <div class="project-item">
+          <div class="project-icon-header">
+            <i class="fas fa-dumbbell"></i>
+          </div>
+          <div class="project-content">
+            <h3><a href="https://github.com/UjjwalPardeshi" target="_blank" rel="noopener">Fitmon</a></h3>
+            <p>AI-powered fitness game using Godot 4.3, TensorFlow.js, and JavaScriptBridge for real-time
+              webcam-based exercise tracking; supports multiple movements and runs natively in browser via Godot
+              HTML5.</p>
+            <div class="project-tags">
+              <span class="tag">Godot 4.3</span>
+              <span class="tag">TensorFlow.js</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <!-- Aircraft/Drone Detection -->
         <div class="project-item">
           <img src="images/project2.png" alt="Aircraft/Drone Detection Project Screenshot" class="project-thumb" />
           <div class="project-content">
@@ -153,6 +337,7 @@
             </div>
           </div>
         </div>
+        <!-- Exoplanet -->
         <div class="project-item">
           <img src="images/project3.png" alt="Exoplanet Detection Project Screenshot" class="project-thumb" />
           <div class="project-content">
@@ -166,13 +351,14 @@
             </div>
           </div>
         </div>
+        <!-- Gesture Authentication -->
         <div class="project-item">
           <img src="images/project4.png" alt="Gesture based authentication system Screenshot" class="project-thumb" />
           <div class="project-content">
             <h3><a href="https://github.com/UjjwalPardeshi/Gesture_Recognition" target="_blank" rel="noopener">Gesture
                 Authentication</a></h3>
-            <p>Security system enabling access via specific user gestures using sensors and machine learning algorithms.
-            </p>
+            <p>Security system enabling access via specific user gestures using sensors and machine learning
+              algorithms.</p>
             <div class="project-tags">
               <span class="tag">ML</span>
               <span class="tag">IoT</span>
@@ -180,6 +366,7 @@
             </div>
           </div>
         </div>
+        <!-- Smart Lift -->
         <div class="project-item">
           <img src="images/project5.png" alt="Smart Lift Occupancy Detection Screenshot" class="project-thumb" />
           <div class="project-content">
@@ -197,17 +384,157 @@
     </div>
   </section>
 
-  <section id="chatbot" class="section chatbot fade-in">
-    <div class="chat-container">
-      <h2 class="chat-title"><i class="fas fa-robot"></i> Ask Me Anything!</h2>
-      <div id="chat-window" class="chat-window"></div>
-      <div class="chat-input-row">
-        <input id="chat-input" type="text" placeholder="Type your message..." autocomplete="off" />
-        <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+  <!-- ═══════════════════════ PUBLICATIONS ═══════════════════════ -->
+  <section id="publications" class="section publications fade-in">
+    <div class="container">
+      <h2><i class="fas fa-book-open"></i> Publications</h2>
+      <div class="publications-grid">
+        <div class="publication-card">
+          <div class="pub-status under-review">Under Review</div>
+          <h3>PINNTO – Physics Informed Neural Networks for Trading Options</h3>
+          <p class="pub-authors">Ujjwal Pardeshi, Mehul Ashra</p>
+          <p class="pub-venue"><i class="fas fa-calendar-alt"></i> B.Tech Major Project • Dec 2025</p>
+          <p class="pub-description">Research applying physics-informed neural networks to financial options trading,
+            combining domain knowledge constraints with deep learning for improved modeling accuracy.</p>
+        </div>
+        <div class="publication-card">
+          <div class="pub-status published">IEEE CONNECT 2025</div>
+          <h3>Emojis as Emotional Markers: A Computational Approach to Sentiment Analysis</h3>
+          <p class="pub-authors">Ujjwal Pardeshi, Sharanya, Dhruv, Achintya, Dr. Vaishnavi Moorthy, Dr. Pushpalatha
+            (SRM), Harichandana B.S.S, Sumit (SRI-B)</p>
+          <p class="pub-venue"><i class="fas fa-calendar-alt"></i> IEEE CONNECT, June 2025</p>
+          <p class="pub-description">Computational approach to analyzing sentiment through emoji usage patterns,
+            leveraging BERT and Emoji2Vec embeddings on a custom 2,700+ emoji-sentiment dataset.</p>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- ═══════════════════════ LEADERSHIP ═══════════════════════ -->
+  <section id="leadership" class="section leadership fade-in">
+    <div class="container">
+      <h2><i class="fas fa-users"></i> Leadership</h2>
+      <div class="leadership-grid">
+        <div class="leadership-card">
+          <div class="leadership-icon"><i class="fas fa-microchip"></i></div>
+          <div class="leadership-details">
+            <h3>Head of Research & Development</h3>
+            <p class="leadership-org">IEEE SRM – Chennai, India</p>
+            <span class="leadership-date"><i class="far fa-calendar-alt"></i> April 2023 – June 2025</span>
+            <ul>
+              <li>Submitted journal paper titled "Evaluating Diverse Machine Learning Techniques For Autism Spectrum
+                Disorder Detection" – currently under review.</li>
+              <li>Lead a team of 30 students; took KT sessions on Neural Networks, Machine Learning, SSL.</li>
+              <li>Presented 4 research posters at the 2nd International Conference on Higher Education Institute's
+                Challenges and Solutions for SDGs'23.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="leadership-card">
+          <div class="leadership-icon"><i class="fas fa-star"></i></div>
+          <div class="leadership-details">
+            <h3>Convener [Board Member]</h3>
+            <p class="leadership-org">Astrophilia – Chennai, India</p>
+            <span class="leadership-date"><i class="far fa-calendar-alt"></i> Sept 2022 – Sept 2024</span>
+            <ul>
+              <li>Acted as the liaison between Astrophilia and college administration, advocating for club interests.
+              </li>
+              <li>Conducted engaging Astronomy sessions to enhance knowledge among members.</li>
+              <li>Organized and led team meetings to maintain project momentum and foster collaboration.</li>
+              <li>Awarded by the Directors of SRMIST for exemplary leadership and contributions to the club.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ CERTIFICATIONS ═══════════════════════ -->
+  <section id="certifications" class="section certifications fade-in">
+    <div class="container">
+      <h2><i class="fas fa-certificate"></i> Certifications</h2>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <i class="fas fa-cloud cert-icon"></i>
+          <span>Oracle Cloud Infrastructure 2025 – Certified AI Foundations Associate</span>
+        </div>
+        <div class="cert-card">
+          <i class="fas fa-cloud cert-icon"></i>
+          <span>Oracle Fusion Cloud Applications ERP Process Essentials Certified – Rel 1</span>
+        </div>
+        <div class="cert-card">
+          <i class="fas fa-chart-line cert-icon"></i>
+          <span>Supervised Machine Learning: Regression and Classification</span>
+        </div>
+        <div class="cert-card">
+          <i class="fab fa-aws cert-icon"></i>
+          <span>AWS Academy Graduate – Machine Learning Foundations</span>
+        </div>
+        <div class="cert-card">
+          <i class="fab fa-google cert-icon"></i>
+          <span>Classify Images with TensorFlow on Google Cloud</span>
+        </div>
+        <div class="cert-card">
+          <i class="fas fa-robot cert-icon"></i>
+          <span>Artificial Intelligence Fundamentals</span>
+        </div>
+        <div class="cert-card">
+          <i class="fas fa-database cert-icon"></i>
+          <span>Data Fundamentals</span>
+        </div>
+        <div class="cert-card">
+          <i class="fas fa-eye cert-icon"></i>
+          <span>Attention Mechanism</span>
+        </div>
+        <div class="cert-card">
+          <i class="fas fa-wand-magic-sparkles cert-icon"></i>
+          <span>Introduction to Generative AI</span>
+        </div>
+        <div class="cert-card">
+          <i class="fas fa-language cert-icon"></i>
+          <span>Introduction to Large Language Models</span>
+        </div>
+        <div class="cert-card">
+          <i class="fas fa-cloud-arrow-up cert-icon"></i>
+          <span>Data Transformation in the Cloud</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ CHATBOT ═══════════════════════ -->
+  <section id="chatbot" class="section chatbot fade-in">
+    <div class="chat-container">
+      <div class="chat-title-bar">
+        <div class="chat-avatar">
+          <i class="fas fa-robot"></i>
+        </div>
+        <div>
+          <h2 class="chat-title">Ask Me Anything!</h2>
+          <span class="chat-status"><span class="status-dot"></span> Online — Powered by Fuse.js</span>
+        </div>
+      </div>
+      <div id="chat-window" class="chat-window"></div>
+      <div id="chat-suggestions" class="chat-suggestions">
+        <button class="suggestion-chip" data-msg="What are his skills?"><i class="fas fa-tools"></i> Skills</button>
+        <button class="suggestion-chip" data-msg="What projects has he done?"><i class="fas fa-rocket"></i>
+          Projects</button>
+        <button class="suggestion-chip" data-msg="Tell me about his internships"><i class="fas fa-building"></i>
+          Experience</button>
+        <button class="suggestion-chip" data-msg="Show me his certifications"><i class="fas fa-certificate"></i>
+          Certifications</button>
+        <button class="suggestion-chip" data-msg="Publications?"><i class="fas fa-book"></i> Publications</button>
+        <button class="suggestion-chip" data-msg="Can I download his resume?"><i class="fas fa-download"></i>
+          Resume</button>
+      </div>
+      <div class="chat-input-row">
+        <input id="chat-input" type="text" placeholder="Ask about skills, projects, research..." autocomplete="off" />
+        <button id="send-btn" aria-label="Send message"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ CONTACT ═══════════════════════ -->
   <section id="contact" class="section contact fade-in">
     <div class="container">
       <h2>Get In Touch</h2>
@@ -219,6 +546,11 @@
           <h3>Email</h3>
           <p>ujjwalpardeshi@gmail.com</p>
         </a>
+        <a href="tel:+918976131401" class="contact-card">
+          <i class="fas fa-phone"></i>
+          <h3>Phone</h3>
+          <p>+91-8976131401</p>
+        </a>
         <a href="https://github.com/UjjwalPardeshi" target="_blank" rel="noopener" class="contact-card">
           <i class="fab fa-github"></i>
           <h3>GitHub</h3>
@@ -229,6 +561,11 @@
           <h3>LinkedIn</h3>
           <p>/in/ujjwalpardeshi</p>
         </a>
+        <a href="https://ujjwalpardeshi.vercel.app" target="_blank" rel="noopener" class="contact-card">
+          <i class="fas fa-globe"></i>
+          <h3>Website</h3>
+          <p>ujjwalpardeshi.vercel.app</p>
+        </a>
         <a href="https://medium.com/@ujjwalpardeshi" target="_blank" rel="noopener" class="contact-card">
           <i class="fab fa-medium"></i>
           <h3>Medium</h3>
@@ -238,6 +575,7 @@
     </div>
   </section>
 
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
   <footer>
     <div class="container footer-container">
       <div class="footer-social">
@@ -251,7 +589,7 @@
           <i class="fab fa-medium"></i>
         </a>
       </div>
-      <p>© 2026 Ujjwal Surajkumar Pardeshi. Built with ❤️</p>
+
     </div>
   </footer>
   <script type="module" src="/src/main.ts"></script>
