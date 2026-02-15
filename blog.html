@@ -1,56 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ujjwal's Blog</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Read Ujjwal Surajkumar Pardeshi's blogs on AI, machine learning, IoT, and more. Explore the latest posts on Medium.">
-    <meta name="keywords" content="AI, machine learning, IoT, blogs, Medium, Ujjwal Surajkumar Pardeshi">
+    <title>Ujjwal's Blog - AI & ML Articles</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
+    <meta name="description"
+        content="Read Ujjwal Surajkumar Pardeshi's blogs on AI, machine learning, IoT, and more. Explore the latest posts on Medium.">
+    <meta name="keywords" content="AI, machine learning, IoT, blogs, Medium, Ujjwal Surajkumar Pardeshi">
 </head>
+
 <body>
     <header>
-        <div class="container">
+        <div class="container header-container">
             <div class="header-content">
                 <h1 class="left-header">Ujjwal's Blog</h1>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="index.html#projects">Projects</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
-                    </ul>
-                </nav>
+                <p class="subtitle">Thoughts on AI, ML & Technology</p>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="blog.html" class="nav-link active"><i class="fas fa-blog"></i> Blog</a></li>
+                    <li><a href="index.html#projects" class="nav-link"><i class="fas fa-code"></i> Projects</a></li>
+                    <li><a href="index.html#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-social">
+                <a href="https://github.com/UjjwalPardeshi" target="_blank" rel="noopener" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/ujjwalpardeshi" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://medium.com/@ujjwalpardeshi" target="_blank" rel="noopener" aria-label="Medium">
+                    <i class="fab fa-medium"></i>
+                </a>
             </div>
         </div>
     </header>
 
-    <section class="section blog">
+    <section class="section blog fade-in">
         <div class="container">
-            <h2>My Blogs on Medium</h2>
+            <h2><i class="fab fa-medium"></i> My Blogs on Medium</h2>
             <div class="blog-list">
-                <div class="blog-post">
-                    <h3><a href="https://medium.com/srm-astrophilia/solving-the-energy-crisis-exploring-the-dyson-sphere-939f25932270" target="_blank">My First Blog Post</a></h3>
-                    <p>In this blog, I delve into the concept of a Dyson Sphere—a theoretical megastructure that could harness the full energy output of a star. Inspired by Freeman Dyson’s 1960 proposal, I explore how an advanced civilization might construct a Dyson Swarm to solve energy crises by capturing and utilizing a star's energy. The blog covers the design, challenges, and the Kardashev scale, which measures a civilization’s ability to harness energy. I also touch on real-world theories about Dyson spheres and their potential role in the search for alien life.</p>
-                </div>
-                <div class="blog-post">
-                    <h3><a href="https://medium.com/srm-astrophilia/tracing-planetary-shadows-discovering-exoplanets-through-light-curve-analysis-53d9f6074ded" target="_blank">Tracing Planetary Shadows: Discovering Exoplanets through Light Curve Analysis</a></h3>
-                    <p>In this blog, I explore the fascinating world of exoplanet detection using light curve analysis and the Box Least Squares (BLS) method. I demonstrate how modern tools, like the Lightkurve Python module, allow scientists to detect Earth-like planets by analyzing the dips in a star's brightness as planets transit in front of them. The post takes you through the steps of identifying multiple planets in the Kepler-69 star system, highlighting techniques like transit modeling and cadence masking to reveal complex planetary systems beyond our solar system.</p>
-                </div>
-                <!-- Add more Medium blog post links here -->
+                <article class="blog-post">
+                    <div class="blog-meta">
+                        <span class="blog-date"><i class="far fa-calendar"></i> 2024</span>
+                        <span class="blog-tag"><i class="fas fa-tag"></i> Astronomy</span>
+                    </div>
+                    <h3><a href="https://medium.com/srm-astrophilia/solving-the-energy-crisis-exploring-the-dyson-sphere-939f25932270"
+                            target="_blank">Solving the Energy Crisis: Exploring the Dyson Sphere</a></h3>
+                    <p>In this blog, I delve into the concept of a Dyson Sphere—a theoretical megastructure that could
+                        harness the full energy output of a star. Inspired by Freeman Dyson's 1960 proposal, I explore
+                        how an advanced civilization might construct a Dyson Swarm to solve energy crises by capturing
+                        and utilizing a star's energy.</p>
+                    <a href="https://medium.com/srm-astrophilia/solving-the-energy-crisis-exploring-the-dyson-sphere-939f25932270"
+                        target="_blank" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </article>
+                <article class="blog-post">
+                    <div class="blog-meta">
+                        <span class="blog-date"><i class="far fa-calendar"></i> 2024</span>
+                        <span class="blog-tag"><i class="fas fa-tag"></i> Data Science</span>
+                    </div>
+                    <h3><a href="https://medium.com/srm-astrophilia/tracing-planetary-shadows-discovering-exoplanets-through-light-curve-analysis-53d9f6074ded"
+                            target="_blank">Tracing Planetary Shadows: Discovering Exoplanets</a></h3>
+                    <p>In this blog, I explore the fascinating world of exoplanet detection using light curve analysis
+                        and the Box Least Squares (BLS) method. I demonstrate how modern tools, like the Lightkurve
+                        Python module, allow scientists to detect Earth-like planets by analyzing the dips in a star's
+                        brightness.</p>
+                    <a href="https://medium.com/srm-astrophilia/tracing-planetary-shadows-discovering-exoplanets-through-light-curve-analysis-53d9f6074ded"
+                        target="_blank" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </article>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <h3><a href="https://medium.com/@ujjwalpardeshi" target="_blank">View All Blogs on Medium</a></h3>
-            <p>Visit my Medium profile to see all my blog posts.</p>
+        <div class="container footer-container">
+            <div class="footer-social">
+                <a href="https://github.com/UjjwalPardeshi" target="_blank" rel="noopener" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/ujjwalpardeshi" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://medium.com/@ujjwalpardeshi" target="_blank" rel="noopener" aria-label="Medium">
+                    <i class="fab fa-medium"></i>
+                </a>
+            </div>
+            <h3><a href="https://medium.com/@ujjwalpardeshi" target="_blank"
+                    style="color: var(--secondary); text-decoration: none;">View All Blogs on Medium <i
+                        class="fas fa-external-link-alt"></i></a></h3>
+            <p>© 2026 Ujjwal Surajkumar Pardeshi. Built with ❤️</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script type="module" src="/src/main.ts"></script>
 </body>
+
 </html>

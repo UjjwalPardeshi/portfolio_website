@@ -32,7 +32,7 @@ const FAQ = [
       "Contact details?", "how can I contact Ujjwal?", "Email", "LinkedIn?", "connect", "reach", "mail"
     ],
     keywords: ["contact", "connect", "email", "linkedin", "mail"],
-    answer: "Email: ujjwalpardeshigmail.com; LinkedIn: linkedin.com/in/ujjwalpardeshi"
+    answer: "Email: ujjwalpardeshi@gmail.com | LinkedIn: <a href='https://linkedin.com/in/ujjwalpardeshi' target='_blank'>linkedin.com/in/ujjwalpardeshi</a>"
   },
   {
     question: [
@@ -89,6 +89,13 @@ const FAQ = [
     ],
     keywords: ["hi", "hello", "hey", "greetings", "job", "thanks", "cool"],
     answer: "Hey! Ask me about Ujjwal's projects, skills, research, certifications, awards, or resume."
+  },
+  {
+    question: [
+      "blogs", "what blogs has he written", "any blogs ?", "any writeups ? ", "other than projects ? "
+    ],
+    keywords: ["writeups", "blog", "blogss", "blogs"],
+    answer: "Hey! Ask me about Ujjwal's projects, skills, research, certifications, awards, or resume."
   }
 ];
 
@@ -103,10 +110,10 @@ function getBotReply(msg) {
   msg = msg.trim().toLowerCase();
   let result = fuse.search(msg);
   // Try again with keywords if first fails
-  if(result.length === 0) {
+  if (result.length === 0) {
     // try to extract main words and search again
     let mainWords = msg.match(/\w+/g);
-    if(mainWords) result = fuse.search(mainWords.join(" "));
+    if (mainWords) result = fuse.search(mainWords.join(" "));
   }
   if (result.length > 0 && result[0].score < 0.55) {
     return result[0].item.answer;
@@ -119,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const chatWindow = document.getElementById("chat-window");
   const chatInput = document.getElementById("chat-input");
   const sendBtn = document.getElementById("send-btn");
-  
+
   function appendMessage(text, sender) {
     const msgDiv = document.createElement("div");
     msgDiv.classList.add("message");
@@ -128,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
     chatWindow.appendChild(msgDiv);
     chatWindow.scrollTop = chatWindow.scrollHeight;
   }
-  
+
   sendBtn.onclick = function () {
     const message = chatInput.value.trim();
     if (!message) return;
@@ -140,5 +147,60 @@ document.addEventListener("DOMContentLoaded", function () {
 
   chatInput.addEventListener("keypress", function (e) {
     if (e.key === "Enter") sendBtn.onclick();
+  });
+});
+
+// Mobile menu toggle
+document.addEventListener("DOMContentLoaded", function () {
+  const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+  const nav = document.querySelector('nav');
+
+  if (mobileMenuBtn && nav) {
+    mobileMenuBtn.addEventListener('click', function () {
+      nav.classList.toggle('active');
+      const icon = this.querySelector('i');
+      icon.classList.toggle('fa-bars');
+      icon.classList.toggle('fa-times');
+    });
+  }
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+        // Close mobile menu after clicking
+        if (nav && nav.classList.contains('active')) {
+          nav.classList.remove('active');
+          const icon = mobileMenuBtn.querySelector('i');
+          icon.classList.add('fa-bars');
+          icon.classList.remove('fa-times');
+        }
+      }
+    });
+  });
+
+  // Intersection Observer for scroll animations
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.animationPlayState = 'running';
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.fade-in').forEach(el => {
+    el.style.animationPlayState = 'paused';
+    observer.observe(el);
   });
 });
