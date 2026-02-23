@@ -26,7 +26,7 @@ const FAQ: FAQItem[] = [
             "introduction", "about"
         ],
         keywords: ["bio", "about", "who", "introduction", "profile", "ujjwal"],
-        answer: "Ujjwal Surajkumar Pardeshi is a Computer Science undergraduate at SRM Institute of Science & Technology (2022–2026) and a <b>Platform Engineer at RIAMONA</b>. He specializes in AI/ML, deep learning, and backend development. He's interned at Samsung R&D, published at IEEE CONNECT 2025, and leads R&D at IEEE SRM."
+        answer: "Ujjwal Surajkumar Pardeshi is a Computer Science undergraduate at SRM Institute of Science & Technology (2022–2026), a <b>Full Stack AI Developer</b>, and a <b>Platform Engineer at RIAMONA</b>. He specializes in building production-ready ML systems, RAG-based applications, and computer vision solutions."
     },
 
     // ── Education ───────────────────────────────────────────────

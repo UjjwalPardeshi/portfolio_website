@@ -25,7 +25,7 @@ const FAQ = [
       "Who is Ujjwal?", "bio", "who are you", "about Ujjwal", "Can you introduce yourself?", "profile"
     ],
     keywords: ["bio", "about", "who", "introduction", "profile"],
-    answer: "Ujjwal Surajkumar Pardeshi is a CS undergraduate specializing in AI/ML, deep learning, and backend development."
+    answer: "Ujjwal Surajkumar Pardeshi is a CS undergraduate specializing in Full Stack AI Development and Platform Engineering."
   },
   {
     question: [
