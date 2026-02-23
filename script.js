@@ -57,24 +57,24 @@ const FAQ = [
   },
   {
     question: [
-      "Tell me about his education", "college", "university", "where does he study?", "education background?"
+      "Tell me about his education", "college", "university", "where does he study?", "education background?", "What is his education?"
     ],
-    keywords: ["education", "college", "srm", "degree", "university"],
+    keywords: ["education", "college", "srm", "degree", "university", "academic"],
     answer: "Ujjwal is pursuing B.Tech in CS (IoT) at SRM Institute of Science & Technology (2022–2026)."
   },
   {
     question: [
-      "Internships?", "What internships has he done?", "Samsung?", "Research experience?", "Show internships"
+      "Internships?", "What internships has he done?", "Samsung?", "Research experience?", "Show internships", "Tell me about his internships"
     ],
-    keywords: ["intern", "internship", "samsung", "research"],
+    keywords: ["intern", "internship", "internships", "samsung", "research", "experience"],
     answer: "He interned at Samsung R&D, working on sentiment analysis and deployed ML web services."
   },
   {
     question: [
-      "Publications?", "Has he published research?", "IEEE paper?", "Any research papers?", "Show publications"
+      "Publications?", "Has he published research?", "IEEE paper?", "Any research papers?", "Show publications", "What research has he published?"
     ],
-    keywords: ["publication", "publications", "paper", "research", "ieee"],
-    answer: "His main publication is 'Emojis as Emotional Markers' for IEEE Connect 2025. He has collaborative ML research under review."
+    keywords: ["publication", "publications", "paper", "papers", "research", "ieee"],
+    answer: "His main publication is '<b><a href=\"https://ieeexplore.ieee.org/document/11306555\" target=\"_blank\">Emojis as Emotional Markers</a></b>' for IEEE Connect 2025. He has collaborative ML research under review."
   },
   {
     question: [
@@ -103,7 +103,7 @@ const fuse = new Fuse(FAQ, {
   isCaseSensitive: false,
   includeScore: true,
   keys: ['question', 'keywords'],
-  threshold: 0.37
+  threshold: 0.45
 });
 
 function getBotReply(msg) {

@@ -407,10 +407,7 @@ nav ul li a:hover {
   gap: 6px;
 }
 
-.edu-cgpa {
-  color: var(--primary) !important;
-  font-weight: 600;
-}
+
 
 /* ══════════════════════════════════════════════════════════════
    EXPERIENCE (TIMELINE)

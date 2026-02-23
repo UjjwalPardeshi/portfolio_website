@@ -26,7 +26,7 @@ const FAQ: FAQItem[] = [
             "introduction", "about"
         ],
         keywords: ["bio", "about", "who", "introduction", "profile", "ujjwal"],
-        answer: "Ujjwal Surajkumar Pardeshi is a Computer Science undergraduate at SRM Institute of Science & Technology (2022–2026, CGPA: 7.5) specializing in AI/ML, deep learning, and backend development. He's interned at Samsung R&D, published at IEEE CONNECT 2025, and leads R&D at IEEE SRM."
+        answer: "Ujjwal Surajkumar Pardeshi is a Computer Science undergraduate at SRM Institute of Science & Technology (2022–2026) and a <b>Platform Engineer at RIAMONA</b>. He specializes in AI/ML, deep learning, and backend development. He's interned at Samsung R&D, published at IEEE CONNECT 2025, and leads R&D at IEEE SRM."
     },
 
     // ── Education ───────────────────────────────────────────────
@@ -34,10 +34,10 @@ const FAQ: FAQItem[] = [
         question: [
             "Tell me about his education", "college", "university",
             "where does he study?", "education background?", "degree",
-            "what is his CGPA?", "SRM", "B.Tech"
+            "SRM", "B.Tech"
         ],
-        keywords: ["education", "college", "srm", "degree", "university", "cgpa", "btech", "iot"],
-        answer: "Ujjwal is pursuing <b>B.Tech in Computer Science (IoT)</b> at SRM Institute of Science & Technology, Chennai (Sept 2022 – May 2026) with a <b>CGPA of 7.5</b>."
+        keywords: ["education", "college", "srm", "degree", "university", "btech", "iot"],
+        answer: "Ujjwal is pursuing <b>B.Tech in Computer Science (IoT)</b> at SRM Institute of Science & Technology, Chennai (Sept 2022 – May 2026)."
     },
 
     // ── Experience / Internships ────────────────────────────────
@@ -45,10 +45,11 @@ const FAQ: FAQItem[] = [
         question: [
             "Internships?", "What internships has he done?", "Samsung?",
             "Research experience?", "Show internships", "work experience",
-            "where has he worked?", "experience"
+            "where has he worked?", "experience", "Tell me about his internships",
+            "Which internships has he done?", "internship details"
         ],
-        keywords: ["intern", "internship", "samsung", "research", "experience", "work", "job"],
-        answer: "🏢 <b>Research Intern – Samsung Research Institute, Bangalore</b> (Jan–June 2025): Worked on emoji-based sentiment analysis with a 2,700+ custom dataset, benchmarked BERT, LightGBM, and ensemble models (86.18% accuracy), and submitted findings to IEEE CONNECT 2025.<br><br>🔬 <b>Undergraduate Researcher – SRM</b> (Aug 2024–Jan 2025): Built the Smart Lift Occupancy System using OpenVINO + Next.js + Firebase + Raspberry Pi. Won \"Best Innovative Solution\" at AIOT Expo 2024 and secured ₹80K in funding."
+        keywords: ["intern", "internship", "internships", "samsung", "research", "experience", "work", "job", "career"],
+        answer: "🚀 <b>Platform Engineer – RIAMONA</b> (Jan 2026–Present): Developing scalable AI-driven platforms using Next.js, FastAPI, Python, Redis, and Docker. Focusing on Full Stack AI integration.<br><br>🏢 <b>Research Intern – Samsung Research Institute, Bangalore</b> (Jan–June 2025): Worked on emoji-based sentiment analysis with a 2,700+ custom dataset, benchmarked BERT, LightGBM, and ensemble models (86.18% accuracy), and submitted findings to IEEE CONNECT 2025.<br><br>🔬 <b>Undergraduate Researcher – SRM</b> (Aug 2024–Jan 2025): Built the Smart Lift Occupancy System using OpenVINO + Next.js + Firebase + Raspberry Pi. Won \"Best Innovative Solution\" at AIOT Expo 2024 and secured ₹80K in funding."
     },
 
     // ── Projects ────────────────────────────────────────────────
@@ -97,10 +98,11 @@ const FAQ: FAQItem[] = [
         question: [
             "Publications?", "Has he published research?", "IEEE paper?",
             "Any research papers?", "Show publications", "PINNTO",
-            "emojis paper", "research papers"
+            "emojis paper", "research papers", "What research has he published?",
+            "publication list", "tell me about his research"
         ],
-        keywords: ["publication", "publications", "paper", "research", "ieee", "pinnto", "emojis"],
-        answer: "📄 <b>PINNTO – Physics Informed Neural Networks for Trading Options</b> (Dec 2025, B.Tech Major Project) – With Mehul Ashra, currently under review.<br><br>📄 <b>Emojis as Emotional Markers: A Computational Approach to Sentiment Analysis</b> (June 2025) – Published at IEEE CONNECT 2025. Uses BERT + Emoji2Vec on a custom 2,700+ emoji-sentiment dataset."
+        keywords: ["publication", "publications", "paper", "papers", "research", "ieee", "pinnto", "emojis"],
+        answer: "📄 <b>PINNTO – Physics Informed Neural Networks for Trading Options</b> (Dec 2025, B.Tech Major Project) – With Mehul Ashra, currently under review.<br><br>📄 <b><a href='https://ieeexplore.ieee.org/document/11306555' target='_blank'>Emojis as Emotional Markers: A Computational Approach to Sentiment Analysis</a></b> (June 2025) – Published at IEEE CONNECT 2025. Uses BERT + Emoji2Vec on a custom 2,700+ emoji-sentiment dataset."
     },
 
     // ── Leadership ──────────────────────────────────────────────
@@ -132,7 +134,7 @@ const FAQ: FAQItem[] = [
             "technologies", "what programming languages?"
         ],
         keywords: ["skills", "tech stack", "languages", "technology", "programming", "backend", "cloud", "ml", "deep learning"],
-        answer: "💻 <b>Languages:</b> Python, C++, C, JavaScript, Node.js, SQL<br>🛠️ <b>Frameworks:</b> FastAPI, Flask, React, Next.js, LangChain, Postman, JWT<br>🧠 <b>AI/ML:</b> PyTorch, TensorFlow, Keras, OpenCV, Hugging Face, YOLOv8, MiDaS, OpenVINO<br>☁️ <b>Cloud & DevOps:</b> AWS, GCP, Docker, Git, CI/CD, Linux, Nvidia A100<br>💾 <b>Databases:</b> Firebase, Supabase, ChromaDB, WebSockets, SendGrid"
+        answer: "💻 <b>Languages:</b> Python, C++, C, JavaScript, TypeScript, Node.js, SQL<br>🛠️ <b>Frameworks:</b> FastAPI, Flask, React, Next.js, LangChain, Postman, JWT<br>🧠 <b>AI/ML:</b> PyTorch, TensorFlow, Keras, OpenCV, Hugging Face, YOLOv8, MiDaS, OpenVINO<br>☁️ <b>Cloud & DevOps:</b> AWS, GCP, Docker, Git, CI/CD, Linux, Nvidia A100<br>💾 <b>Databases:</b> Firebase, Supabase, Redis, ChromaDB, WebSockets, SendGrid"
     },
 
     // ── Awards ──────────────────────────────────────────────────
@@ -140,9 +142,9 @@ const FAQ: FAQItem[] = [
         question: [
             "How many awards has Ujjwal won?", "List of awards",
             "What all awards has he won", "How many recognitions",
-            "Has he won awards?", "Achievements list"
+            "Has he won awards?", "Achievements list", "What awards has he won?"
         ],
-        keywords: ["awards", "award", "honor", "recognition", "achievement"],
+        keywords: ["awards", "award", "honor", "honors", "recognition", "achievement", "achievements"],
         answer: "🏆 <b>\"Best Innovative Solution\"</b> – AIOT Project Expo 2024 (with ₹80K funding)<br>🏆 <b>IEEE CONNECT 2025</b> – Author distinction for published research<br>🏆 <b>SRMIST Director's Award</b> – For exemplary leadership at Astrophilia club<br>🏆 4 research posters presented at the 2nd International Conference on SDGs'23"
     },
 
@@ -171,7 +173,7 @@ const FAQ: FAQItem[] = [
     {
         question: [
             "Resume?", "CV?", "Get his resume", "Download CV",
-            "Can I download your resume?"
+            "Can I download your resume?", "Can I download his resume?"
         ],
         keywords: ["resume", "cv", "download"],
         answer: "📄 Download his resume: <a href='https://drive.google.com/file/d/1KjQhVFWBTl9Ivi1mHQL9mya4LfkotWCw/view?usp=sharing' target='_blank'>Google Drive Link</a>"
@@ -206,7 +208,7 @@ const fuse = new Fuse<FAQItem>(FAQ, {
     isCaseSensitive: false,
     includeScore: true,
     keys: ['question', 'keywords'],
-    threshold: 0.37
+    threshold: 0.45
 });
 
 // ══════════════════════════════════════════════════════════════
