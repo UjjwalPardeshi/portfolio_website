@@ -61,7 +61,7 @@ const FAQ: FAQItem[] = [
             "show projects", "portfolio"
         ],
         keywords: ["projects", "major project", "project", "portfolio", "work samples"],
-        answer: "Ujjwal's key projects include:<br>🤖 <b>RAG-Based AI Chatbot</b> – Context-aware chatbot with ChromaDB, WebSockets, SendGrid, Firebase<br>🌊 <b>Underwater Reflection Removal</b> – YOLOv8 + MiDaS pipeline (presented at AI FOR OCEANS)<br>🚗 <b>AutoSense</b> – Vehicle detection with DeepLabV3 (96% accuracy)<br>🏋️ <b>Fitmon</b> – AI fitness game with Godot 4.3 + TensorFlow.js<br>✈️ <b>Aircraft/Drone Detection</b> – YOLO-based aerial detection<br>🌍 <b>Exoplanet Detection</b> – NASA Kepler/TESS data analysis<br>✋ <b>Gesture Authentication</b> – ML-based gesture security<br>🛗 <b>Smart Lift System</b> – IoT-based elevator optimization"
+        answer: "Ujjwal's key projects include:<br>🤖 <b>RAG-Based AI Chatbot</b> – Context-aware chatbot with ChromaDB, WebSockets, SendGrid, Firebase<br>🎨 <b>AI Image Colorizer</b> – Full-stack deep learning solution using SIGGRAPH 17/ECCV 16<br>🌊 <b>Underwater Reflection Removal</b> – YOLOv8 + MiDaS pipeline (presented at AI FOR OCEANS)<br>🚗 <b>AutoSense</b> – Vehicle detection with DeepLabV3 (96% accuracy)<br>🏋️ <b>Fitmon</b> – AI fitness game with Godot 4.3 + TensorFlow.js<br>✈️ <b>Aircraft/Drone Detection</b> – YOLO-based aerial detection<br>🌍 <b>Exoplanet Detection</b> – NASA Kepler/TESS data analysis<br>✋ <b>Gesture Authentication</b> – ML-based gesture security<br>🛗 <b>Smart Lift System</b> – IoT-based elevator optimization"
     },
 
     // ── RAG Chatbot specifically ────────────────────────────────
@@ -72,6 +72,16 @@ const FAQ: FAQItem[] = [
         ],
         keywords: ["rag", "chatbot project", "chromadb", "websocket"],
         answer: "The <b>RAG-Based AI Chatbot</b> features context-aware responses using ChromaDB, real-time WebSocket messaging, automated lead capture & email via SendGrid, and persistent storage using Firebase Firestore. Built with FastAPI, LangChain, ChromaDB, Sockets, and SendGrid."
+    },
+
+    // ── AI Image Colorizer specifically ─────────────────────────
+    {
+        question: [
+            "Tell me about the image colorizer", "colorization project",
+            "AI Image Colorizer", "automatic image colorization"
+        ],
+        keywords: ["colorizer", "colorization", "pytorch", "fastapi", "next.js"],
+        answer: "The <b>AI Image Colorizer</b> is a full-stack solution that restores life to old black-and-white photos using state-of-the-art deep learning (SIGGRAPH 17 & ECCV 16). It features a high-performance FastAPI backend, a premium Next.js 14 frontend, and a real-time before/after comparison slider. Built with PyTorch and Python."
     },
 
     // ── Underwater Vision ───────────────────────────────────────
