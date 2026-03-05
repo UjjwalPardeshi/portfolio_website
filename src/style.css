@@ -942,6 +942,256 @@ nav ul li a:hover {
   line-height: 1.4;
 }
 
+
+/* ══════════════════════════════════════════════════════════════
+   GITHUB ACTIVITY
+   ══════════════════════════════════════════════════════════════ */
+.github-activity {
+  background: linear-gradient(180deg, #ECEFF1 0%, #e0e4e8 100%);
+}
+
+.github-subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin-top: -15px;
+  margin-bottom: 40px;
+}
+
+.gh-contribution-wrapper {
+  background: linear-gradient(145deg, #191970, #0f1147);
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 40px;
+  box-shadow: 0 15px 40px rgba(25, 25, 112, 0.2);
+  overflow-x: auto;
+}
+
+.gh-contribution-header {
+  margin-bottom: 16px;
+}
+
+.gh-contribution-label {
+  color: rgba(236, 239, 241, 0.7);
+  font-size: 0.9rem;
+}
+
+.gh-total-count {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #C5CAE9;
+}
+
+.gh-contribution-grid {
+  display: flex;
+  gap: 3px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.gh-contribution-grid::-webkit-scrollbar {
+  height: 4px;
+}
+
+.gh-contribution-grid::-webkit-scrollbar-thumb {
+  background: rgba(63, 81, 181, 0.4);
+  border-radius: 2px;
+}
+
+.gh-week {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.gh-day {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  cursor: crosshair;
+}
+
+.gh-day:hover {
+  transform: scale(1.8);
+  box-shadow: 0 0 8px rgba(63, 81, 181, 0.6);
+  z-index: 5;
+  position: relative;
+}
+
+.gh-contribution-legend {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  margin-top: 12px;
+}
+
+.gh-legend-label {
+  color: rgba(236, 239, 241, 0.5);
+  font-size: 0.72rem;
+  margin: 0 4px;
+}
+
+.gh-legend-box {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+}
+
+.gh-repos-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.gh-repos-title i {
+  color: #3F51B5;
+  margin-right: 8px;
+}
+
+.gh-repos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.gh-repo-card {
+  background: #fff;
+  border: 1px solid rgba(25, 25, 112, 0.1);
+  border-radius: 14px;
+  padding: 22px;
+  text-decoration: none;
+  transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 4px 15px rgba(25, 25, 112, 0.06);
+}
+
+.gh-repo-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(25, 25, 112, 0.15);
+  border-color: rgba(63, 81, 181, 0.3);
+}
+
+.gh-repo-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.gh-repo-icon {
+  color: #3F51B5;
+  font-size: 1rem;
+}
+
+.gh-repo-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #191970;
+  word-break: break-word;
+}
+
+.gh-repo-desc {
+  color: #546E7A;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  flex-grow: 1;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.gh-repo-footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  color: #78909C;
+}
+
+.gh-repo-lang {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
+}
+
+.gh-lang-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.gh-repo-stat {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.gh-repo-stat i {
+  font-size: 0.75rem;
+}
+
+.gh-repo-updated {
+  margin-left: auto;
+  font-size: 0.75rem;
+  color: #90A4AE;
+}
+
+.gh-view-all {
+  text-align: center;
+}
+
+.gh-profile-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #191970, #3F51B5);
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 30px rgba(25, 25, 112, 0.25);
+}
+
+.gh-profile-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(25, 25, 112, 0.4);
+}
+
+.gh-profile-btn i {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .gh-repos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gh-day {
+    width: 10px;
+    height: 10px;
+  }
+
+  .gh-contribution-wrapper {
+    padding: 18px;
+  }
+}
+
 /* ══════════════════════════════════════════════════════════════
    CHATBOT (IMPROVED)
    ══════════════════════════════════════════════════════════════ */

@@ -1,6 +1,7 @@
 import Fuse from 'fuse.js';
 import './style.css';
 import { initChatbotAvatar, setChatbotTyping } from './chatbot-avatar';
+import { initGitHubActivity } from './github-activity';
 
 // ══════════════════════════════════════════════════════════════
 // TYPE DEFINITIONS
@@ -335,6 +336,9 @@ document.addEventListener("DOMContentLoaded", (): void => {
 
     // Initialize the Three.js chatbot avatar
     initChatbotAvatar();
+
+    // Initialize GitHub Activity widget
+    initGitHubActivity();
 });
 
 // ══════════════════════════════════════════════════════════════
