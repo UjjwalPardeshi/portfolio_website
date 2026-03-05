@@ -1,5 +1,6 @@
 import Fuse from 'fuse.js';
 import './style.css';
+import { initChatbotAvatar, setChatbotTyping } from './chatbot-avatar';
 
 // ══════════════════════════════════════════════════════════════
 // TYPE DEFINITIONS
@@ -277,17 +278,20 @@ document.addEventListener("DOMContentLoaded", (): void => {
         if (!message.trim()) return;
         appendMessage(message, "user");
 
-        // Show typing indicator
+        // Show typing indicator & trigger avatar typing state
         const typingEl = showTypingIndicator();
+        setChatbotTyping(true);
 
         // Simulate a short delay for natural feel
+        const delay = 600 + Math.random() * 400;
         setTimeout((): void => {
             if (typingEl && chatWindow) {
                 chatWindow.removeChild(typingEl);
             }
+            setChatbotTyping(false);
             const botReply = getBotReply(message);
             appendMessage(botReply, "bot");
-        }, 600 + Math.random() * 400);
+        }, delay);
 
         if (chatInput) chatInput.value = "";
     }
@@ -328,6 +332,9 @@ document.addEventListener("DOMContentLoaded", (): void => {
             "bot"
         );
     }, 800);
+
+    // Initialize the Three.js chatbot avatar
+    initChatbotAvatar();
 });
 
 // ══════════════════════════════════════════════════════════════

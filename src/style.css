@@ -968,19 +968,22 @@ nav ul li a:hover {
 }
 
 .chat-avatar {
-  width: 44px;
-  height: 44px;
-  background: rgba(255, 255, 255, 0.2);
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  overflow: hidden;
+  background: transparent;
 }
 
-.chat-avatar i {
-  font-size: 1.3rem;
-  color: white;
+#chatbot-avatar-canvas {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: block;
 }
 
 .section h2.chat-title {
