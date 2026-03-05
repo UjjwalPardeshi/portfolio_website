@@ -21,7 +21,7 @@
 }
 
 body {
-  font-family: 'Inter', 'Roboto', Arial, sans-serif;
+
   background-color: var(--light);
   color: #263238;
   line-height: 1.6;
@@ -33,6 +33,74 @@ body {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   SCROLL REVEAL (PARALLAX TRANSITIONS)
+   ══════════════════════════════════════════════════════════════ */
+.reveal-up,
+.reveal-left,
+.reveal-right,
+.reveal-scale {
+  opacity: 0;
+  transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1);
+  will-change: transform, opacity;
+}
+
+/* Base starting offsets */
+.reveal-up {
+  transform: translateY(60px);
+}
+
+.reveal-left {
+  transform: translateX(-60px);
+}
+
+.reveal-right {
+  transform: translateX(60px);
+}
+
+.reveal-scale {
+  transform: scale(0.85);
+}
+
+/* Active states (triggered continuously when section is in view) */
+section.active .reveal-up,
+section.active .reveal-left,
+section.active .reveal-right,
+section.active .reveal-scale,
+.active.reveal-up,
+.active.reveal-left,
+.active.reveal-right,
+.active.reveal-scale {
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+}
+
+/* Base fade-ins to replace old logic */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+section.active .fade-in,
+.active.fade-in {
+  opacity: 1;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   SCROLL PROGRESS BAR
+   ══════════════════════════════════════════════════════════════ */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #4dd0e1, #3F51B5, #81c784);
+  width: 0%;
+  z-index: 9999;
+  box-shadow: 0 0 10px rgba(77, 208, 225, 0.5);
+  transition: width 0.1s ease-out;
 }
 
 /* ══════════════════════════════════════════════════════════════
@@ -62,7 +130,7 @@ header {
 }
 
 .left-header {
-  font-family: 'Montserrat', sans-serif;
+
   font-size: 2.2rem;
   font-weight: 800;
   color: #fff;
@@ -216,7 +284,7 @@ nav ul li a:hover {
 }
 
 .section h2 {
-  font-family: 'Montserrat', sans-serif;
+
   font-size: 2.2rem;
   margin-bottom: 40px;
   text-align: center;
@@ -317,7 +385,7 @@ nav ul li a:hover {
 
 .stat-number {
   display: block;
-  font-family: 'Montserrat', sans-serif;
+
   font-size: 1.8rem;
   font-weight: 800;
   background: var(--accent-gradient);
@@ -378,7 +446,7 @@ nav ul li a:hover {
 }
 
 .edu-details h3 {
-  font-family: 'Montserrat', sans-serif;
+
   font-size: 1.3rem;
   color: var(--dark);
   margin-bottom: 6px;
@@ -477,7 +545,7 @@ nav ul li a:hover {
 }
 
 .timeline-header h3 {
-  font-family: 'Montserrat', sans-serif;
+
   font-size: 1.2rem;
   color: var(--dark);
 }
@@ -564,7 +632,7 @@ nav ul li a:hover {
 }
 
 .skill-category h3 {
-  font-family: 'Montserrat', sans-serif;
+
   font-size: 1.1rem;
   margin-bottom: 20px;
   color: var(--dark);
@@ -669,7 +737,7 @@ nav ul li a:hover {
 }
 
 .project-item h3 {
-  font-family: 'Montserrat', sans-serif;
+
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 1.15rem;
@@ -762,7 +830,7 @@ nav ul li a:hover {
 }
 
 .publication-card h3 {
-  font-family: 'Montserrat', sans-serif;
+
   font-size: 1.1rem;
   color: var(--dark);
   margin-bottom: 10px;
@@ -853,7 +921,7 @@ nav ul li a:hover {
 }
 
 .leadership-details h3 {
-  font-family: 'Montserrat', sans-serif;
+
   font-size: 1.15rem;
   margin-bottom: 4px;
 }
@@ -977,7 +1045,7 @@ nav ul li a:hover {
 }
 
 .gh-total-count {
-  font-family: 'Montserrat', sans-serif;
+
   font-weight: 700;
   color: #C5CAE9;
 }
@@ -1040,7 +1108,7 @@ nav ul li a:hover {
 }
 
 .gh-repos-title {
-  font-family: 'Montserrat', sans-serif;
+
   font-size: 1.3rem;
   color: var(--text-primary);
   margin-bottom: 24px;
@@ -1090,7 +1158,7 @@ nav ul li a:hover {
 }
 
 .gh-repo-name {
-  font-family: 'Montserrat', sans-serif;
+
   font-weight: 700;
   font-size: 1rem;
   color: #191970;
@@ -1239,7 +1307,7 @@ nav ul li a:hover {
 .section h2.chat-title {
   color: #fff !important;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+
   font-size: 1.2rem;
   text-align: left;
 }
@@ -1295,7 +1363,7 @@ nav ul li a:hover {
   background: linear-gradient(135deg, #e8edf2, #f0f3f7);
   color: #263238;
   align-self: flex-start;
-  font-family: 'Inter', sans-serif;
+
   line-height: 1.5;
   animation: messageSlide 0.3s ease;
   font-size: 0.9rem;
@@ -1396,7 +1464,7 @@ nav ul li a:hover {
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-family: 'Inter', sans-serif;
+
   display: flex;
   align-items: center;
   gap: 6px;
@@ -1432,7 +1500,7 @@ nav ul li a:hover {
   font-size: 0.95rem;
   outline: none;
   transition: all 0.3s ease;
-  font-family: 'Inter', sans-serif;
+
 }
 
 #chat-input::placeholder {
@@ -1528,7 +1596,7 @@ nav ul li a:hover {
 }
 
 .contact-card h3 {
-  font-family: 'Montserrat', sans-serif;
+
   font-size: 1rem;
   margin-bottom: 6px;
 }
@@ -1624,7 +1692,7 @@ footer p {
 }
 
 .blog-post h3 {
-  font-family: 'Montserrat', sans-serif;
+
   margin-bottom: 15px;
 }
 

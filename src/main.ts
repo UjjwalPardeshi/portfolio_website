@@ -386,22 +386,85 @@ document.addEventListener("DOMContentLoaded", (): void => {
         });
     });
 
-    // Intersection Observer for scroll animations
+    // ══════════════════════════════════════════════════════════════
+    // PROFESSIONAL SCROLL REVEAL (PARALLAX)
+    // ══════════════════════════════════════════════════════════════
     const observerOptions: IntersectionObserverInit = {
-        threshold: 0.1,
+        threshold: 0.15,
         rootMargin: '0px 0px -50px 0px'
     };
 
-    const observer = new IntersectionObserver((entries: IntersectionObserverEntry[]): void => {
+    const sectionObserver = new IntersectionObserver((entries: IntersectionObserverEntry[]): void => {
         entries.forEach((entry: IntersectionObserverEntry): void => {
             if (entry.isIntersecting) {
-                (entry.target as HTMLElement).style.animationPlayState = 'running';
+                entry.target.classList.add('active');
             }
         });
     }, observerOptions);
 
-    document.querySelectorAll<HTMLElement>('.fade-in').forEach((el: HTMLElement): void => {
-        el.style.animationPlayState = 'paused';
-        observer.observe(el);
+    // Auto-apply reveal effects to grids so we don't have to bloat HTML
+    const applyStaggeredReveals = (selector: string, animationClass: string = 'reveal-up') => {
+        document.querySelectorAll(selector).forEach(parent => {
+            Array.from(parent.children).forEach((child, index) => {
+                child.classList.add(animationClass);
+                (child as HTMLElement).style.transitionDelay = `${index * 120}ms`;
+            });
+        });
+    };
+
+    // Experience timeline alternately comes from left/right
+    document.querySelectorAll('.timeline-item').forEach((item, index) => {
+        item.classList.add(index % 2 === 0 ? 'reveal-left' : 'reveal-right');
+        (item as HTMLElement).style.transitionDelay = `${index * 150}ms`;
     });
+
+    // Specifically apply individual classes to clean elements
+    applyStaggeredReveals('.skills-grid', 'reveal-up');
+    applyStaggeredReveals('.project-grid', 'reveal-scale');
+    applyStaggeredReveals('.publications-grid', 'reveal-up');
+    applyStaggeredReveals('.leadership-grid', 'reveal-scale');
+    applyStaggeredReveals('.cert-grid', 'reveal-scale');
+    applyStaggeredReveals('.contact-grid', 'reveal-scale');
+    applyStaggeredReveals('.gh-repos-grid', 'reveal-up');
+
+    // Section headings come up from bottom
+    document.querySelectorAll('.section h2, .about-text h2').forEach(heading => {
+        heading.classList.add('reveal-up');
+    });
+
+    // About section specialized
+    const profilePhoto = document.querySelector('.profile-photo');
+    if (profilePhoto) profilePhoto.classList.add('reveal-left');
+
+    const aboutTextBlocks = document.querySelectorAll('.about-text p, .about-stats');
+    aboutTextBlocks.forEach((el, i) => {
+        el.classList.add('reveal-right');
+        (el as HTMLElement).style.transitionDelay = `${(i + 1) * 100}ms`;
+    });
+
+    // Education card
+    const eduCard = document.querySelector('.education-card');
+    if (eduCard) eduCard.classList.add('reveal-scale');
+
+    // GitHub stats 
+    const ghWrapper = document.querySelector('.gh-contribution-wrapper');
+    if (ghWrapper) ghWrapper.classList.add('reveal-up');
+
+    // Observe all sections
+    document.querySelectorAll<HTMLElement>('.section').forEach((el: HTMLElement): void => {
+        sectionObserver.observe(el);
+    });
+
+    // ══════════════════════════════════════════════════════════════
+    // SCROLL PROGRESS BAR
+    // ══════════════════════════════════════════════════════════════
+    const scrollProgress = document.getElementById('scroll-progress');
+    if (scrollProgress) {
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrollPercentage = (scrollTop / scrollHeight) * 100;
+            scrollProgress.style.width = `${scrollPercentage}%`;
+        }, { passive: true });
+    }
 });
