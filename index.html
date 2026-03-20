@@ -11,9 +11,21 @@
     rel="stylesheet" />
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" type="image/jpeg" href="images/profile.jpg" />
   <link rel="stylesheet" href="style.css" />
   <meta name="description"
     content="Portfolio of Ujjwal Surajkumar Pardeshi - Full Stack AI Developer. Samsung R&D Intern, IEEE R&D Head, Published Researcher." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ujjwal Pardeshi – Full Stack AI Developer" />
+  <meta property="og:description" content="Platform Engineer at RIAMONA. Samsung R&D Intern. IEEE Published Researcher. Building production-ready ML systems, RAG applications, and computer vision solutions." />
+  <meta property="og:image" content="https://ujjwalpardeshi.vercel.app/images/profile.jpg" />
+  <meta property="og:url" content="https://ujjwalpardeshi.vercel.app" />
+  <meta property="og:type" content="website" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ujjwal Pardeshi – Full Stack AI Developer" />
+  <meta name="twitter:description" content="Platform Engineer at RIAMONA. Samsung R&D Intern. IEEE Published Researcher. Building production-ready ML systems and computer vision solutions." />
+  <meta name="twitter:image" content="https://ujjwalpardeshi.vercel.app/images/profile.jpg" />
 </head>
 
 <body>
@@ -49,7 +61,7 @@
         </ul>
       </nav>
       <div class="header-social">
-        <a href="https://github.com/UjjwalPardeshi" target="_blank" rel="noopener" aria-label="GitHub">
+<a href="https://github.com/UjjwalPardeshi" target="_blank" rel="noopener" aria-label="GitHub">
           <i class="fab fa-github"></i>
         </a>
         <a href="https://linkedin.com/in/ujjwalpardeshi" target="_blank" rel="noopener" aria-label="LinkedIn">
@@ -92,7 +104,7 @@
             <span class="stat-label">Certifications</span>
           </div>
           <div class="stat-item">
-            <span class="stat-number">9+</span>
+            <span class="stat-number">11+</span>
             <span class="stat-label">Projects</span>
           </div>
         </div>
@@ -136,22 +148,25 @@
             </div>
             <p class="timeline-company"><i class="fas fa-building"></i> RIAMONA</p>
             <ul class="timeline-details">
-              <li>Developing and optimizing scalable AI-driven platforms using <strong>Next.js</strong>,
-                <strong>FastAPI</strong>, and <strong>Python</strong>.
+              <li>Developed the company landing page and the RLFB module frontend using
+                <strong>Next.js</strong> and <strong>TypeScript</strong> for seamless user interaction and responsive
+                design.
               </li>
-              <li>Architecting robust backend systems with <strong>Redis</strong> for caching and
-                <strong>Docker</strong> for containerized deployment.
+              <li>Engineered backend services and data pipelines utilizing <strong>Python</strong>, ensuring scalable
+                and reliable system operations.
               </li>
-              <li>Integrating <strong>Full Stack AI</strong> solutions to enhance platform capabilities and provide
-                state-of-the-art user experiences.</li>
+              <li>Integrated <strong>Supabase</strong> for secure database management and <strong>Redis</strong> for
+                instant data caching and real-time synchronization.</li>
+              <li>Optimized frontend architecture and rendering strategies, delivering a high-performance and visually
+                consistent application experience.</li>
             </ul>
             <div class="timeline-tags">
               <span class="tag">Next.js</span>
-              <span class="tag">FastAPI</span>
+              <span class="tag">TypeScript</span>
               <span class="tag">Python</span>
+              <span class="tag">Supabase</span>
               <span class="tag">Redis</span>
               <span class="tag">Docker</span>
-              <span class="tag">Full Stack AI</span>
             </div>
           </div>
         </div>
@@ -296,6 +311,7 @@
             <i class="fas fa-coins"></i>
           </div>
           <div class="project-content">
+            <span class="project-badge proprietary"><i class="fas fa-lock"></i> Proprietary</span>
             <h3>Shopify Gold Price Automation System</h3>
             <p>End-to-end automated pricing engine for a luxury jewellery Shopify store with ~939 products and 55,000+ variants. Scrapes live gold rates from IBJA twice daily, recalculates all variant prices using a component-wise formula, and pushes updates via Shopify GraphQL Bulk Operations API with zero manual steps.</p>
             <div class="project-tags">
@@ -314,6 +330,7 @@
             <i class="fas fa-file-invoice-dollar"></i>
           </div>
           <div class="project-content">
+            <span class="project-badge proprietary"><i class="fas fa-lock"></i> Proprietary</span>
             <h3>Invoice & Payment Management Portal</h3>
             <p>Full-stack enterprise financial platform for invoice tracking, payment scheduling, and UTR verification. Features slab-based early-payment discount engine, daily interest penalty calculations, bulk Excel import, role-based access control, and a payment simulator.</p>
             <div class="project-tags">
@@ -348,7 +365,9 @@
         <!-- ── AI / ML / Computer Vision ── -->
         <!-- AI Image Colorizer -->
         <div class="project-item">
-          <img src="images/project_colorizer.png" alt="AI Image Colorizer Screenshot" class="project-thumb" />
+          <div class="project-icon-header">
+            <i class="fas fa-palette"></i>
+          </div>
           <div class="project-content">
             <h3><a href="https://github.com/UjjwalPardeshi/image_colourization" target="_blank" rel="noopener">AI Image
                 Colorizer</a></h3>
@@ -400,7 +419,9 @@
         </div>
         <!-- AutoSense -->
         <div class="project-item">
-          <img src="images/project1.png" alt="AutoSense Project Screenshot" class="project-thumb" />
+          <div class="project-icon-header">
+            <i class="fas fa-car"></i>
+          </div>
           <div class="project-content">
             <h3><a href="https://github.com/UjjwalPardeshi/AutoSense" target="_blank" rel="noopener">AutoSense</a>
             </h3>
@@ -415,7 +436,9 @@
         </div>
         <!-- Aircraft/Drone Detection -->
         <div class="project-item">
-          <img src="images/project2.png" alt="Aircraft/Drone Detection Project Screenshot" class="project-thumb" />
+          <div class="project-icon-header">
+            <i class="fas fa-plane"></i>
+          </div>
           <div class="project-content">
             <h3><a href="https://github.com/UjjwalPardeshi/Aircraft_detection-with-Deeplearning" target="_blank"
                 rel="noopener">Aircraft/Drone Detection</a></h3>
@@ -431,7 +454,9 @@
         <!-- ── Research & IoT ── -->
         <!-- Exoplanet -->
         <div class="project-item">
-          <img src="images/project3.png" alt="Exoplanet Detection Project Screenshot" class="project-thumb" />
+          <div class="project-icon-header">
+            <i class="fas fa-globe-americas"></i>
+          </div>
           <div class="project-content">
             <h3><a href="https://github.com/UjjwalPardeshi/Exoplanet_detection" target="_blank" rel="noopener">Exoplanet
                 Detection</a></h3>
@@ -445,7 +470,9 @@
         </div>
         <!-- Gesture Authentication -->
         <div class="project-item">
-          <img src="images/project4.png" alt="Gesture based authentication system Screenshot" class="project-thumb" />
+          <div class="project-icon-header">
+            <i class="fas fa-hand-sparkles"></i>
+          </div>
           <div class="project-content">
             <h3><a href="https://github.com/UjjwalPardeshi/Gesture_Recognition" target="_blank" rel="noopener">Gesture
                 Authentication</a></h3>
@@ -460,7 +487,9 @@
         </div>
         <!-- Smart Lift -->
         <div class="project-item">
-          <img src="images/project5.png" alt="Smart Lift Occupancy Detection Screenshot" class="project-thumb" />
+          <div class="project-icon-header">
+            <i class="fas fa-elevator"></i>
+          </div>
           <div class="project-content">
             <h3><a href="https://github.com/UjjwalPardeshi/Smart_lift" target="_blank" rel="noopener">Smart Lift
                 System</a></h3>
@@ -584,50 +613,50 @@
     <div class="container">
       <h2><i class="fas fa-certificate"></i> Certifications</h2>
       <div class="cert-grid">
-        <div class="cert-card">
+        <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=9C23AA606CDB8084F51229499608E3C1C9CDF1007985292626B0777FDCD567B7" target="_blank" rel="noopener" class="cert-card">
           <i class="fas fa-cloud cert-icon"></i>
           <span>Oracle Cloud Infrastructure 2025 – Certified AI Foundations Associate</span>
-        </div>
-        <div class="cert-card">
+        </a>
+        <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=7BCF69C8A3DB1F47F2711DFC8B1DEEF2D78F5A9663BD303887A3A16E389543CF" target="_blank" rel="noopener" class="cert-card">
           <i class="fas fa-cloud cert-icon"></i>
           <span>Oracle Fusion Cloud Applications ERP Process Essentials Certified – Rel 1</span>
-        </div>
-        <div class="cert-card">
+        </a>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/4A3G7M87Y5GA" target="_blank" rel="noopener" class="cert-card">
           <i class="fas fa-chart-line cert-icon"></i>
           <span>Supervised Machine Learning: Regression and Classification</span>
-        </div>
-        <div class="cert-card">
+        </a>
+        <a href="https://www.credly.com/badges/468c5419-f06a-42c2-8ad6-927adb9e0911/linked_in_profile" target="_blank" rel="noopener" class="cert-card">
           <i class="fab fa-aws cert-icon"></i>
           <span>AWS Academy Graduate – Machine Learning Foundations</span>
-        </div>
-        <div class="cert-card">
+        </a>
+        <a href="https://www.cloudskillsboost.google/public_profiles/11092c8c-6bd6-4e21-9858-630098e81ec5/badges/8959986" target="_blank" rel="noopener" class="cert-card">
           <i class="fab fa-google cert-icon"></i>
           <span>Classify Images with TensorFlow on Google Cloud</span>
-        </div>
-        <div class="cert-card">
+        </a>
+        <a href="https://www.credly.com/badges/9b309c1d-043f-4549-aaca-f68fa5c95ca5/linked_in_profile" target="_blank" rel="noopener" class="cert-card">
           <i class="fas fa-robot cert-icon"></i>
           <span>Artificial Intelligence Fundamentals</span>
-        </div>
-        <div class="cert-card">
+        </a>
+        <a href="https://www.credly.com/badges/89b4d572-1230-4023-bcd9-0393ed5fd576/linked_in_profiles" target="_blank" rel="noopener" class="cert-card">
           <i class="fas fa-database cert-icon"></i>
           <span>Data Fundamentals</span>
-        </div>
-        <div class="cert-card">
+        </a>
+        <a href="https://www.skills.google/public_profiles/11092c8c-6bd6-4e21-9858-630098e81ec5/badges/8943219" target="_blank" rel="noopener" class="cert-card">
           <i class="fas fa-eye cert-icon"></i>
           <span>Attention Mechanism</span>
-        </div>
-        <div class="cert-card">
+        </a>
+        <a href="https://www.cloudskillsboost.google/public_profiles/11092c8c-6bd6-4e21-9858-630098e81ec5/badges/8921738" target="_blank" rel="noopener" class="cert-card">
           <i class="fas fa-wand-magic-sparkles cert-icon"></i>
           <span>Introduction to Generative AI</span>
-        </div>
-        <div class="cert-card">
+        </a>
+        <a href="https://www.cloudskillsboost.google/public_profiles/11092c8c-6bd6-4e21-9858-630098e81ec5/badges/8962761" target="_blank" rel="noopener" class="cert-card">
           <i class="fas fa-language cert-icon"></i>
           <span>Introduction to Large Language Models</span>
-        </div>
-        <div class="cert-card">
+        </a>
+        <a href="https://www.cloudskillsboost.google/public_profiles/4e7b0150-ed47-4604-a89e-c04debad86cc/badges/15092661" target="_blank" rel="noopener" class="cert-card">
           <i class="fas fa-cloud-arrow-up cert-icon"></i>
           <span>Data Transformation in the Cloud</span>
-        </div>
+        </a>
       </div>
     </div>
   </section>

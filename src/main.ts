@@ -467,4 +467,5 @@ document.addEventListener("DOMContentLoaded", (): void => {
             scrollProgress.style.width = `${scrollPercentage}%`;
         }, { passive: true });
     }
+
 });

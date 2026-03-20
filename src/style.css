@@ -732,6 +732,29 @@ nav ul li a:hover {
   background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
 }
 
+/* Project Badge */
+.project-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.project-badge.proprietary {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: white;
+}
+
+.project-badge i {
+  font-size: 0.65rem;
+}
+
 .project-content {
   padding: 25px;
 }
@@ -987,6 +1010,8 @@ nav ul li a:hover {
   border-radius: 12px;
   transition: all 0.3s ease;
   border: 1px solid rgba(25, 25, 112, 0.1);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .cert-card:hover {
@@ -1302,12 +1327,14 @@ nav ul li a:hover {
   height: 72px;
   border-radius: 50%;
   display: block;
+  background: transparent !important;
 }
 
 .section h2.chat-title {
   color: #fff !important;
   margin: 0;
-
+  background: none;
+  padding: 0;
   font-size: 1.2rem;
   text-align: left;
 }
@@ -1885,3 +1912,4 @@ footer p {
     font-size: 1.5rem;
   }
 }
+
