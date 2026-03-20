@@ -339,6 +339,21 @@ document.addEventListener("DOMContentLoaded", (): void => {
 
     // Initialize GitHub Activity widget
     initGitHubActivity();
+
+    // ══════════════════════════════════════════════════════════════
+    // VIEW COUNTER
+    // ══════════════════════════════════════════════════════════════
+    const viewCounter = document.getElementById('view-counter');
+    if (viewCounter) {
+        fetch('https://api.counterapi.dev/v1/ujjwalpardeshi-portfolio/visits/up')
+            .then(res => res.json())
+            .then(data => {
+                viewCounter.textContent = (data.count ?? 0).toLocaleString();
+            })
+            .catch(() => {
+                viewCounter.textContent = '—';
+            });
+    }
 });
 
 // ══════════════════════════════════════════════════════════════
@@ -387,72 +402,78 @@ document.addEventListener("DOMContentLoaded", (): void => {
     });
 
     // ══════════════════════════════════════════════════════════════
-    // PROFESSIONAL SCROLL REVEAL (PARALLAX)
+    // ANIMATE ON SCROLL (AOS-style)
     // ══════════════════════════════════════════════════════════════
-    const observerOptions: IntersectionObserverInit = {
-        threshold: 0.15,
-        rootMargin: '0px 0px -50px 0px'
-    };
 
-    const sectionObserver = new IntersectionObserver((entries: IntersectionObserverEntry[]): void => {
+    // Observer that toggles .active on each element individually
+    const aosObserver = new IntersectionObserver((entries: IntersectionObserverEntry[]): void => {
         entries.forEach((entry: IntersectionObserverEntry): void => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
+            } else {
+                entry.target.classList.remove('active');
             }
         });
-    }, observerOptions);
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -60px 0px'
+    });
 
-    // Auto-apply reveal effects to grids so we don't have to bloat HTML
-    const applyStaggeredReveals = (selector: string, animationClass: string = 'reveal-up') => {
+    // Helper: apply animation class + staggered delay to grid children, then observe each
+    const applyStaggeredReveals = (selector: string, animationClass: string = 'reveal-up', delayMs: number = 100) => {
         document.querySelectorAll(selector).forEach(parent => {
             Array.from(parent.children).forEach((child, index) => {
                 child.classList.add(animationClass);
-                (child as HTMLElement).style.transitionDelay = `${index * 120}ms`;
+                (child as HTMLElement).style.transitionDelay = `${index * delayMs}ms`;
+                aosObserver.observe(child);
             });
         });
     };
 
-    // Experience timeline alternately comes from left/right
+    // Helper: apply class to single element and observe
+    const applyReveal = (selector: string, animationClass: string, delay: number = 0) => {
+        document.querySelectorAll(selector).forEach((el, i) => {
+            el.classList.add(animationClass);
+            (el as HTMLElement).style.transitionDelay = `${delay > 0 ? (i + 1) * delay : 0}ms`;
+            aosObserver.observe(el);
+        });
+    };
+
+    // ── Section headings slide up ──
+    applyReveal('.section h2, .about-text h2', 'reveal-up');
+
+    // ── About section ──
+    applyReveal('.profile-photo', 'reveal-left');
+    applyReveal('.about-text p, .about-stats', 'reveal-right', 100);
+
+    // ── Education card ──
+    applyReveal('.education-card', 'reveal-scale');
+
+    // ── Experience timeline alternates left/right ──
     document.querySelectorAll('.timeline-item').forEach((item, index) => {
         item.classList.add(index % 2 === 0 ? 'reveal-left' : 'reveal-right');
         (item as HTMLElement).style.transitionDelay = `${index * 150}ms`;
+        aosObserver.observe(item);
     });
 
-    // Specifically apply individual classes to clean elements
-    applyStaggeredReveals('.skills-grid', 'reveal-up');
-    applyStaggeredReveals('.project-grid', 'reveal-scale');
-    applyStaggeredReveals('.publications-grid', 'reveal-up');
-    applyStaggeredReveals('.leadership-grid', 'reveal-scale');
-    applyStaggeredReveals('.cert-grid', 'reveal-scale');
-    applyStaggeredReveals('.contact-grid', 'reveal-scale');
-    applyStaggeredReveals('.gh-repos-grid', 'reveal-up');
+    // ── Grid sections with staggered children ──
+    applyStaggeredReveals('.skills-grid', 'reveal-up', 100);
+    applyStaggeredReveals('.project-grid', 'reveal-scale', 80);
+    applyStaggeredReveals('.publications-grid', 'reveal-up', 120);
+    applyStaggeredReveals('.leadership-grid', 'reveal-scale', 120);
+    applyStaggeredReveals('.cert-grid', 'reveal-up', 60);
+    applyStaggeredReveals('.contact-grid', 'reveal-scale', 80);
+    applyStaggeredReveals('.gh-repos-grid', 'reveal-up', 100);
 
-    // Section headings come up from bottom
-    document.querySelectorAll('.section h2, .about-text h2').forEach(heading => {
-        heading.classList.add('reveal-up');
-    });
+    // ── GitHub contribution graph ──
+    applyReveal('.gh-contribution-wrapper', 'reveal-up');
 
-    // About section specialized
-    const profilePhoto = document.querySelector('.profile-photo');
-    if (profilePhoto) profilePhoto.classList.add('reveal-left');
+    // ── Chat container ──
+    applyReveal('.chat-container', 'reveal-scale');
 
-    const aboutTextBlocks = document.querySelectorAll('.about-text p, .about-stats');
-    aboutTextBlocks.forEach((el, i) => {
-        el.classList.add('reveal-right');
-        (el as HTMLElement).style.transitionDelay = `${(i + 1) * 100}ms`;
-    });
-
-    // Education card
-    const eduCard = document.querySelector('.education-card');
-    if (eduCard) eduCard.classList.add('reveal-scale');
-
-    // GitHub stats 
-    const ghWrapper = document.querySelector('.gh-contribution-wrapper');
-    if (ghWrapper) ghWrapper.classList.add('reveal-up');
-
-    // Observe all sections
+    // ── Observe sections for fade-in ──
     document.querySelectorAll<HTMLElement>('.section').forEach((el: HTMLElement): void => {
-        sectionObserver.observe(el);
+        aosObserver.observe(el);
     });
 
     // ══════════════════════════════════════════════════════════════
