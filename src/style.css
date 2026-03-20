@@ -1850,6 +1850,8 @@ footer p {
   }
 
   .profile-photo {
+    width: 180px;
+    height: 180px;
     margin-bottom: 20px;
   }
 
@@ -1867,16 +1869,18 @@ footer p {
   }
 
   .section {
-    padding: 60px 0;
+    padding: 50px 0;
   }
 
   .section h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    margin-bottom: 30px;
   }
 
   .education-card {
     flex-direction: column;
     text-align: center;
+    padding: 25px;
   }
 
   .edu-meta {
@@ -1891,35 +1895,150 @@ footer p {
     flex-direction: column;
     align-items: flex-start;
   }
-}
 
-@media screen and (max-width: 480px) {
-  .left-header {
-    font-size: 1.5rem;
+  .timeline-content {
+    padding: 20px;
   }
 
-  .subtitle {
+  .timeline-details li {
     font-size: 0.9rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
   }
 
   .project-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
-  .skill-category {
+  .project-icon-header {
+    height: 140px;
+  }
+
+  .project-icon-header i {
+    font-size: 2.8rem;
+  }
+
+  .project-content {
     padding: 20px;
   }
 
-  .contact-card {
-    padding: 25px 20px;
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
   }
 
-  .cert-grid {
-    grid-template-columns: 1fr;
+  .contact-card {
+    padding: 22px 16px;
+  }
+
+  .contact-card i {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+
+  .contact-card h3 {
+    font-size: 0.9rem;
+  }
+
+  .contact-card p {
+    font-size: 0.78rem;
   }
 
   .chat-container {
+    max-width: 100%;
     border-radius: 16px;
+  }
+
+  .chat-window {
+    height: 300px;
+    padding: 15px;
+  }
+
+  .chat-title-bar {
+    padding: 16px 18px;
+  }
+
+  .chat-avatar {
+    width: 56px;
+    height: 56px;
+  }
+
+  #chatbot-avatar-canvas {
+    width: 56px;
+    height: 56px;
+  }
+
+  .suggestion-chip {
+    font-size: 0.72rem;
+    padding: 6px 10px;
+  }
+
+  .chat-input-row {
+    padding: 10px;
+  }
+
+  #chat-input {
+    padding: 12px 14px;
+    font-size: 0.9rem;
+  }
+
+  #send-btn {
+    width: 44px;
+    height: 44px;
+    font-size: 1rem;
+  }
+
+  .gh-contribution-wrapper {
+    padding: 16px;
+  }
+
+  .gh-profile-btn {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+  }
+
+  .footer-container {
+    gap: 14px;
+  }
+
+  .footer-views {
+    font-size: 0.78rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .left-header {
+    font-size: 1.4rem;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 24px;
+  }
+
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+  }
+
+  .about-stats {
+    gap: 12px;
   }
 
   .stat-item {
@@ -1929,6 +2048,86 @@ footer p {
 
   .stat-number {
     font-size: 1.5rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .skill-category {
+    padding: 20px;
+  }
+
+  .skill-tag {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .cert-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .cert-card {
+    padding: 14px 16px;
+  }
+
+  .cert-card span {
+    font-size: 0.82rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-card {
+    padding: 20px 14px;
+  }
+
+  .timeline {
+    padding-left: 25px;
+  }
+
+  .timeline-dot {
+    left: -28px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .timeline-tags .tag {
+    font-size: 0.7rem;
+    padding: 4px 10px;
+  }
+
+  .project-item h3 {
+    font-size: 1.05rem;
+  }
+
+  .project-item p {
+    font-size: 0.88rem;
+  }
+
+  .tag {
+    font-size: 0.72rem;
+    padding: 4px 10px;
+  }
+
+  .publication-card {
+    padding: 22px;
+  }
+
+  .publication-card h3 {
+    font-size: 1rem;
+  }
+
+  .leadership-card {
+    padding: 22px;
+    flex-direction: column;
+  }
+
+  .leadership-details li {
+    font-size: 0.85rem;
   }
 }
 
